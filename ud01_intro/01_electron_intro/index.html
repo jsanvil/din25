@@ -365,6 +365,29 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RRAA_CCEE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    RRAA y CCEE
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -496,6 +519,30 @@
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#principales-frameworks-para-aplicaciones-multiplataforma" class="md-nav__link">
+    <span class="md-ellipsis">
+      Principales frameworks para aplicaciones multiplataforma
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Principales frameworks para aplicaciones multiplataforma">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tabla-comparativa-de-frameworks-de-desarrollo-multiplataforma" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tabla Comparativa de Frameworks de Desarrollo Multiplataforma
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#requisitos" class="md-nav__link">
@@ -647,6 +694,30 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#principales-frameworks-para-aplicaciones-multiplataforma" class="md-nav__link">
+    <span class="md-ellipsis">
+      Principales frameworks para aplicaciones multiplataforma
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Principales frameworks para aplicaciones multiplataforma">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tabla-comparativa-de-frameworks-de-desarrollo-multiplataforma" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tabla Comparativa de Frameworks de Desarrollo Multiplataforma
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#requisitos" class="md-nav__link">
     <span class="md-ellipsis">
       Requisitos
@@ -748,7 +819,11 @@
 
 <h1 id="11-introduccion-a-electron">1.1 Introducción a Electron</h1>
 <ul>
-<li><a href="#requisitos">Requisitos</a></li>
+<li><a href="#principales-frameworks-para-aplicaciones-multiplataforma">Principales frameworks para aplicaciones multiplataforma</a><ul>
+<li><a href="#tabla-comparativa-de-frameworks-de-desarrollo-multiplataforma">Tabla Comparativa de Frameworks de Desarrollo Multiplataforma</a></li>
+</ul>
+</li>
+<li><a href="#requisitos">Requisitos</a><ul>
 <li><a href="#conocimientos-previos">Conocimientos previos</a></li>
 <li><a href="#herramientas-necesarias">Herramientas necesarias</a><ul>
 <li><a href="#editor-de-código">Editor de código</a></li>
@@ -757,8 +832,100 @@
 </ul>
 </li>
 <li><a href="#nodejs-y-npm">Node.js y npm</a></li>
+</ul>
+</li>
 <li><a href="#electron-reloader">Electron reloader</a></li>
 </ul>
+<h2 id="principales-frameworks-para-aplicaciones-multiplataforma">Principales frameworks para aplicaciones multiplataforma</h2>
+<p>Existen varios <em>frameworks</em> para el desarrollo de aplicaciones multiplataforma, cada uno con sus propias características, ventajas y desventajas. A continuación se presenta una tabla comparativa de los más populares:</p>
+<h3 id="tabla-comparativa-de-frameworks-de-desarrollo-multiplataforma">Tabla Comparativa de Frameworks de Desarrollo Multiplataforma</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><em>Característica</em></th>
+<th style="text-align: left;">Electron</th>
+<th style="text-align: left;">Flutter</th>
+<th style="text-align: left;">Compose Multiplatform</th>
+<th style="text-align: left;">React Native</th>
+<th style="text-align: left;">Ionic</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Plataformas de destino</strong></td>
+<td style="text-align: left;"><strong>Windows, macOS, Linux</strong></td>
+<td style="text-align: left;">iOS, Android, Web, Desktop</td>
+<td style="text-align: left;">iOS, Android, Desktop</td>
+<td style="text-align: left;">iOS, Android</td>
+<td style="text-align: left;">iOS, Android, Web</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Lenguaje de Programación</strong></td>
+<td style="text-align: left;">HTML, CSS, JavaScript</td>
+<td style="text-align: left;">Dart</td>
+<td style="text-align: left;">Kotlin</td>
+<td style="text-align: left;">JavaScript / TypeScript</td>
+<td style="text-align: left;">HTML, CSS, JavaScript</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Rendimiento</strong></td>
+<td style="text-align: left;"><strong>Bueno</strong> (Chromium)</td>
+<td style="text-align: left;">Excelente (widgets propios)</td>
+<td style="text-align: left;">Excelente (código nativo)</td>
+<td style="text-align: left;">Muy bueno (código nativo)</td>
+<td style="text-align: left;">Bueno (WebView)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Curva de Aprendizaje</strong></td>
+<td style="text-align: left;"><strong>Baja</strong> para desarrolladores web</td>
+<td style="text-align: left;">Moderada</td>
+<td style="text-align: left;">Baja para desarrolladores Kotlin</td>
+<td style="text-align: left;">Baja para desarrolladores web</td>
+<td style="text-align: left;">Baja para desarrolladores web</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Empresa Desarrolladora</strong></td>
+<td style="text-align: left;">GitHub</td>
+<td style="text-align: left;">Google</td>
+<td style="text-align: left;">JetBrains</td>
+<td style="text-align: left;">Meta</td>
+<td style="text-align: left;">Drifty Co.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ejemplos de Apps Famosas</strong></td>
+<td style="text-align: left;">VS Code, Discord, Slack</td>
+<td style="text-align: left;">Google Pay, Alibaba, BMW</td>
+<td style="text-align: left;">JetBrains, Intuit</td>
+<td style="text-align: left;">Instagram, Facebook, Airbnb</td>
+<td style="text-align: left;">MarketWatch, Sworkit</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Tipo de App</strong></td>
+<td style="text-align: left;"><strong>De escritorio</strong></td>
+<td style="text-align: left;">Nativa</td>
+<td style="text-align: left;">Nativa</td>
+<td style="text-align: left;">Nativa</td>
+<td style="text-align: left;">Híbrida/PWA</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ecosistema y Comunidad</strong></td>
+<td style="text-align: left;"><strong>Muy grande y activa</strong></td>
+<td style="text-align: left;">En crecimiento rápido y muy activa</td>
+<td style="text-align: left;">En rápido crecimiento</td>
+<td style="text-align: left;">Enorme, muy activa</td>
+<td style="text-align: left;">Grande y activa</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Coste</strong></td>
+<td style="text-align: left;"><strong>Gratuito y de código abierto</strong></td>
+<td style="text-align: left;">Gratuito y de código abierto</td>
+<td style="text-align: left;">Gratuito y de código abierto</td>
+<td style="text-align: left;">Gratuito y de código abierto</td>
+<td style="text-align: left;">Gratuito y de código abierto</td>
+</tr>
+</tbody>
+</table>
+<p>En este curso nos centraremos en el desarrollo con <strong>Electron</strong> debido a su facilidad de uso y su capacidad para crear aplicaciones de escritorio multiplataforma con tecnologías web familiares.</p>
 <h2 id="requisitos">Requisitos</h2>
 <p><em><strong>Electron</strong></em> es un <em>framework</em> para crear aplicaciones de escritorio usando <strong><em>JavaScript</em></strong>, <strong><em>HTML</em></strong> y <strong><em>CSS</em></strong>. Incorpora <a href="https://www.chromium.org/chromium-projects/"><em>Chromium</em></a> y <a href="https://nodejs.org/es"><em>Node.js</em></a> en un único archivo binario. Permite crear aplicaciones <strong>multiplataforma</strong> que funcionan en <em>Windows</em>, <em>macOS</em> y <em>Linux</em> con una única base común de código <em>JavaScript</em>.</p>
 <h3 id="conocimientos-previos">Conocimientos previos</h3>
