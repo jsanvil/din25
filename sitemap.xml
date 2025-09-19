@@ -2,38 +2,46 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://jsanvil.github.io/din25/</loc>
-         <lastmod>2025-09-15</lastmod>
+         <lastmod>2025-09-19</lastmod>
     </url>
     <url>
          <loc>https://jsanvil.github.io/din25/RRAA_CCEE/</loc>
-         <lastmod>2025-09-15</lastmod>
+         <lastmod>2025-09-19</lastmod>
     </url>
     <url>
          <loc>https://jsanvil.github.io/din25/entorno/</loc>
-         <lastmod>2025-09-15</lastmod>
+         <lastmod>2025-09-19</lastmod>
     </url>
     <url>
          <loc>https://jsanvil.github.io/din25/ud01_intro/</loc>
-         <lastmod>2025-09-15</lastmod>
+         <lastmod>2025-09-19</lastmod>
     </url>
     <url>
          <loc>https://jsanvil.github.io/din25/ud01_intro/01_electron_intro/</loc>
-         <lastmod>2025-09-15</lastmod>
+         <lastmod>2025-09-19</lastmod>
     </url>
     <url>
          <loc>https://jsanvil.github.io/din25/ud01_intro/021_actividad/</loc>
-         <lastmod>2025-09-15</lastmod>
+         <lastmod>2025-09-19</lastmod>
     </url>
     <url>
          <loc>https://jsanvil.github.io/din25/ud01_intro/02_electron_firstapp/</loc>
-         <lastmod>2025-09-15</lastmod>
+         <lastmod>2025-09-19</lastmod>
     </url>
     <url>
          <loc>https://jsanvil.github.io/din25/ud01_intro/03_gui/</loc>
-         <lastmod>2025-09-15</lastmod>
+         <lastmod>2025-09-19</lastmod>
     </url>
     <url>
-         <loc>https://jsanvil.github.io/din25/ud01_intro/04_visual_design/</loc>
-         <lastmod>2025-09-15</lastmod>
+         <loc>https://jsanvil.github.io/din25/ud01_intro/041_actividad/</loc>
+         <lastmod>2025-09-19</lastmod>
+    </url>
+    <url>
+         <loc>https://jsanvil.github.io/din25/ud01_intro/04_angular_electron/</loc>
+         <lastmod>2025-09-19</lastmod>
+    </url>
+    <url>
+         <loc>https://jsanvil.github.io/din25/ud01_intro/_06_visual_design/</loc>
+         <lastmod>2025-09-19</lastmod>
     </url>
 </urlset>
