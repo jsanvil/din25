@@ -730,6 +730,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#referencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      Referencias
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -867,6 +876,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#referencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      Referencias
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -945,6 +963,7 @@
 <li><strong>Plantilla HTML</strong>: Define la estructura visual del componente.</li>
 <li><strong>Estilos CSS</strong>: Define la apariencia del componente.</li>
 </ol>
+<p><em>Referencia: <a href="https://angular.dev/essentials/components">https://angular.dev/essentials/components</a></em></p>
 <p>Para crear un nuevo componente, podemos usar el siguiente comando:</p>
 <div class="language-bash highlight"><span class="filename">Crear componente</span><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="hll">ng<span class="w"> </span>generate<span class="w"> </span>component<span class="w"> </span>&lt;nombre-del-componente&gt;
 </span></span></code></pre></div>
@@ -1011,7 +1030,13 @@
 </div>
 </div>
 </div>
-<p>Se ve una separación clara entre la lógica (TypeScript), la estructura (HTML) y el estilo (CSS), puede que parezca complejo al principio, teniendo en cuenta un ejemplo tan simple, pero esta separación es fundamental para mantener el código organizado y facilitar su mantenimiento.</p>
+<p>Se ve una separación clara entre la lógica (<em>TypeScript</em>), la estructura (HTML) y el estilo (CSS), puede que parezca complejo al principio, teniendo en cuenta un ejemplo tan simple, pero esta separación es fundamental para mantener el código organizado y facilitar su mantenimiento.</p>
+<div class="admonition note">
+<p class="admonition-title">Interpolación de variables <code>{{ }}</code></p>
+<p>Para crear un enlace entre el valor de una variable en <em>TypeScript</em> y representarlo en la plantilla <em>HTML</em> se utiliza las dobles llaves <code>{{ variable }}</code></p>
+<p>De esta forma, podemos crear valores dinámicos en <em>html</em>, controlando su valor desde el código del componente.</p>
+<p><em>Referencia: <a href="https://angular.dev/guide/templates/binding#render-dynamic-text-with-text-interpolation">https://angular.dev/guide/templates/binding#render-dynamic-text-with-text-interpolation</a></em></p>
+</div>
 <p>Para utilizar este componente en la aplicación, debemos declararlo en el módulo principal (<code>app.ts</code>) y luego incluir su selector (<code>&lt;app-hello&gt;</code>) en la plantilla HTML principal (<code>app.html</code>).</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">app.ts</label><label for="__tabbed_2_2">app.html</label></div>
 <div class="tabbed-content">
@@ -1495,7 +1520,18 @@
 </span><span id="__span-26-5"><a id="__codelineno-26-5" name="__codelineno-26-5" href="#__codelineno-26-5"></a>}
 </span></code></pre></div>
 <p>En el ejemplo visto con el listado de productos no se utiliza, porque, cuando no haya elementos, se quiere ocultar toda la tabla, incluyendo cabeceras.</p>
+<p><em>Referencias:</em></p>
+<ul>
+<li><a href="https://angular.dev/api/core/@for"><em>https://angular.dev/api/core/@for</em></a></li>
+<li><a href="https://angular.dev/guide/templates/control-flow#conditionally-display-content-with-if-else-if-and-else"><em>https://angular.dev/guide/templates/control-flow#conditionally-display-content-with-if-else-if-and-else</em></a></li>
+</ul>
 </div>
+<h2 id="referencias">Referencias</h2>
+<ul>
+<li><a href="https://angular.dev/overview">Documentación oficial de Angular</a></li>
+<li><a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/">Bootstrap</a></li>
+<li><a href="https://material.angular.dev/components/categories">Angular Material</a></li>
+</ul>
 
 
 
