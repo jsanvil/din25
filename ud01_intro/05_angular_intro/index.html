@@ -1485,6 +1485,17 @@
 </div>
 </div>
 <p>La directiva <code>@for</code> tiene una propiedad <code>track</code> obligatoria, que permite especificar una propiedad del objeto que se utiliza para identificar cada elemento de la lista. Esto permite que <em>Angular</em> pueda identificar los elementos de la lista y actualizarlos de forma eficiente.</p>
+<div class="admonition note">
+<p class="admonition-title">@empty</p>
+<p><code>@for</code> se puede acompañar de <strong><code>@empty</code></strong>, por ejemplo:</p>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-26-1"><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a>@for (item of items; track item.name) {
+</span><span id="__span-26-2"><a id="__codelineno-26-2" name="__codelineno-26-2" href="#__codelineno-26-2"></a>    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span> {{ item.name }}<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span><span id="__span-26-3"><a id="__codelineno-26-3" name="__codelineno-26-3" href="#__codelineno-26-3"></a><span class="hll">} @empty {
+</span></span><span id="__span-26-4"><a id="__codelineno-26-4" name="__codelineno-26-4" href="#__codelineno-26-4"></a>    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span> Ho hay elementos. <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span><span id="__span-26-5"><a id="__codelineno-26-5" name="__codelineno-26-5" href="#__codelineno-26-5"></a>}
+</span></code></pre></div>
+<p>En el ejemplo visto con el listado de productos no se utiliza, porque, cuando no haya elementos, se quiere ocultar toda la tabla, incluyendo cabeceras.</p>
+</div>
 
 
 
