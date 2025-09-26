@@ -797,7 +797,25 @@
 <p>Si el array de eventos está vacío, con las directivas <code>@if</code> y <code>@else</code>, muestra el mensaje "<em><code>No hay eventos disponibles</code></em>" dentro de un <code>&lt;h3&gt;</code>, por ejemplo.</p>
 </li>
 <li>
-<p>Realiza un <strong><em><code>commit</code></em></strong> con los cambios realizados, sube el código al repositorio remoto, y crea un <strong>TAG</strong> en git con el nombre "<strong><code>v1</code></strong>"</p>
+<p>Puedes realizar todos los <strong><em><code>commit</code></em></strong> que necesites, en el último pon el mensaje "<strong><code>v1.0.0</code></strong>".</p>
+<p>Si por algún motivo necesitas realizar cambios, una vez termines sube el número de versión <em>patch</em></p>
+<p><em>Por ejemplo: <code>1</code>.<code>0</code>.<strong><code>0</code></strong>  ___  <code>1</code>.<code>0</code>.<strong><code>1</code></strong> ___ <code>1</code>.<code>0</code>.<strong><code>2</code></strong> ___ etc.</em></p>
+<div class="admonition note">
+<p class="admonition-title">Referencia: <a href="https://semver.org/">Semantic Versioning 2.0.0</a></p>
+<blockquote>
+<p>Given a version number <strong><code>MAJOR</code>.<code>MINOR</code>.<code>PATCH</code></strong>, increment the:</p>
+<ul>
+<li><strong><code>MAJOR</code></strong> -&gt; <strong>incompatible breaking changes</strong></li>
+<li><strong><code>MINOR</code></strong> -&gt; <strong>new feature/functionality</strong></li>
+<li><strong><code>PATCH</code></strong> -&gt; <strong>bug fixes</strong></li>
+</ul>
+</blockquote>
+<p>Por lo tanto para corregir fallos (<em>bug fixes</em>) se debe incrementar el último número.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">TAG</p>
+<p>Lo habitual es etiquetar con <em>TAGs</em> para establecer las distintas versiones. Pero en este caso <em>GitHub Classroom</em> no permite el uso de etiquetas.</p>
+</div>
 </li>
 <li>
 <p>Comprueba que los cambios se han subido correctamente al repositorio remoto.</p>
