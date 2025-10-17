@@ -8,28 +8,28 @@
       
       
       
-        <link rel="canonical" href="https://jsanvil.github.io/din25/ud01_intro/021_actividad/">
+        <link rel="canonical" href="https://jsanvil.github.io/din25/ud02_framework/">
       
       
-        <link rel="prev" href="../02_electron_firstapp/">
+        <link rel="prev" href="../ud01_intro/03_gui/">
       
       
-        <link rel="next" href="../03_gui/">
+        <link rel="next" href="04_angular_electron/">
       
       
-      <link rel="icon" href="../../assets/favicon.png">
+      <link rel="icon" href="../assets/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.17">
     
     
       
-        <title>1.2.1 ✍️ Actividad: Preparar el entorno y crear la primera aplicación en Electron - DIN 2025</title>
+        <title>UD2: Framework Angular - DIN 2025</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.7e37652d.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -48,9 +48,9 @@
       
     
     
-      <link rel="stylesheet" href="../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#121--actividad-preparar-el-entorno-y-crear-la-primera-aplicación-en-electron" class="md-skip">
+        <a href="#ud2-framework-angular" class="md-skip">
           Skip to content
         </a>
       
@@ -90,7 +90,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="DIN 2025" class="md-header__button md-logo" aria-label="DIN 2025" data-md-component="logo">
+    <a href=".." title="DIN 2025" class="md-header__button md-logo" aria-label="DIN 2025" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 14c1.33 0 4 .67 4 2v1h-8v-1c0-1.33 2.67-2 4-2m0-1c1.11 0 2-.89 2-2s-.89-2-2-2a2 2 0 1 0 0 4m7-5v10c0 1.11-.89 2-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h6l2 2h8a2 2 0 0 1 2 2m-2 0H4v10h16z"/></svg>
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              1.2.1 ✍️ Actividad: Preparar el entorno y crear la primera aplicación en Electron
+              UD2: Framework Angular
             
           </span>
         </div>
@@ -211,11 +211,31 @@
     
     
       <li class="md-tabs__item">
-        <a href="../.." class="md-tabs__link">
+        <a href=".." class="md-tabs__link">
           
   
   
   Inicio
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../ud01_intro/" class="md-tabs__link">
+          
+  
+  
+  UD1 Intro
 
         </a>
       </li>
@@ -233,27 +253,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../" class="md-tabs__link">
-          
-  
-  
-  UD1 Intro
-
-        </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../../ud02_framework/" class="md-tabs__link">
+        <a href="./" class="md-tabs__link">
           
   
   
@@ -273,7 +273,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../ud03_components/" class="md-tabs__link">
+        <a href="../ud03_components/" class="md-tabs__link">
           
   
   
@@ -307,7 +307,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="DIN 2025" class="md-nav__button md-logo" aria-label="DIN 2025" data-md-component="logo">
+    <a href=".." title="DIN 2025" class="md-nav__button md-logo" aria-label="DIN 2025" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 14c1.33 0 4 .67 4 2v1h-8v-1c0-1.33 2.67-2 4-2m0-1c1.11 0 2-.89 2-2s-.89-2-2-2a2 2 0 1 0 0 4m7-5v10c0 1.11-.89 2-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h6l2 2h8a2 2 0 0 1 2 2m-2 0H4v10h16z"/></svg>
@@ -366,7 +366,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href=".." class="md-nav__link">
         
   
   
@@ -389,7 +389,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../entorno/" class="md-nav__link">
+      <a href="../entorno/" class="md-nav__link">
         
   
   
@@ -412,12 +412,175 @@
   
   
     <li class="md-nav__item">
-      <a href="../../RRAA_CCEE/" class="md-nav__link">
+      <a href="../RRAA_CCEE/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     RRAA y CCEE
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    UD1 Intro
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            UD1 Intro
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ud01_intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    UD1: Introducción
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ud01_intro/01_electron_intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    1.1 Introducción a Electron
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ud01_intro/02_electron_firstapp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    1.2 Creando la primera aplicación en Electron
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ud01_intro/021_actividad/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    1.2.1 ✍️ Actividad: Preparar el entorno y crear la primera aplicación en Electron
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ud01_intro/03_gui/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    1.3 Interfaz gráfica de usuario (GUI)
     
   </span>
   
@@ -458,15 +621,15 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
   
   <span class="md-ellipsis">
-    UD1 Intro
+    UD2 Framework
     
   </span>
   
@@ -474,81 +637,12 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
-            UD1 Intro
+            UD2 Framework
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    UD1: Introducción
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../01_electron_intro/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    1.1 Introducción a Electron
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../02_electron_firstapp/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    1.2 Creando la primera aplicación en Electron
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
             
               
                 
@@ -571,107 +665,13 @@
   
   
   <span class="md-ellipsis">
-    1.2.1 ✍️ Actividad: Preparar el entorno y crear la primera aplicación en Electron
-    
-  </span>
-  
-
-      </a>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../03_gui/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    1.3 Interfaz gráfica de usuario (GUI)
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
-        
-          
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    UD2 Framework
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3">
-            <span class="md-nav__icon md-icon"></span>
-            UD2 Framework
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../ud02_framework/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
     UD2: Framework Angular
     
   </span>
   
 
       </a>
+      
     </li>
   
 
@@ -684,7 +684,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ud02_framework/04_angular_electron/" class="md-nav__link">
+      <a href="04_angular_electron/" class="md-nav__link">
         
   
   
@@ -707,7 +707,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ud02_framework/05_angular_intro/" class="md-nav__link">
+      <a href="05_angular_intro/" class="md-nav__link">
         
   
   
@@ -730,7 +730,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ud02_framework/06_angular_databinding/" class="md-nav__link">
+      <a href="06_angular_databinding/" class="md-nav__link">
         
   
   
@@ -794,7 +794,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ud02_framework/051_actividad/" class="md-nav__link">
+      <a href="051_actividad/" class="md-nav__link">
         
   
   
@@ -817,7 +817,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ud02_framework/061_actividad/" class="md-nav__link">
+      <a href="061_actividad/" class="md-nav__link">
         
   
   
@@ -840,7 +840,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ud02_framework/062_actividad/" class="md-nav__link">
+      <a href="062_actividad/" class="md-nav__link">
         
   
   
@@ -919,7 +919,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ud03_components/" class="md-nav__link">
+      <a href="../ud03_components/" class="md-nav__link">
         
   
   
@@ -942,7 +942,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ud03_components/07_components/" class="md-nav__link">
+      <a href="../ud03_components/07_components/" class="md-nav__link">
         
   
   
@@ -1006,7 +1006,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ud03_components/071_actividad/" class="md-nav__link">
+      <a href="../ud03_components/071_actividad/" class="md-nav__link">
         
   
   
@@ -1071,61 +1071,22 @@
 
 
 
-<h1 id="121--actividad-preparar-el-entorno-y-crear-la-primera-aplicación-en-electron">1.2.1 ✍️ Actividad: Preparar el entorno y crear la primera aplicación en Electron</h1>
-<p>Para realizar la actividad se debe seguir los siguientes pasos:</p>
-<ol>
-<li>
-<p>Acepta la <em>invitación a la actividad</em> en GitHub Classroom: <a href="https://classroom.github.com/a/FU7tJcIi">https://classroom.github.com/a/FU7tJcIi</a></p>
+<h1 id="ud2-framework-angular">UD2: Framework Angular</h1>
 <ul>
-<li>Selecciona tu correo corporativo del listado.</li>
-<li>Acepta la actividad.</li>
+<li><a href="04_angular_electron/">2.1 - Trabajar con Angular y Electron</a><ul>
+<li><a href="041_actividad/">2.1.1 ✍️ Actividad: Proyecto base Angular + Electron</a></li>
 </ul>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>Debes utilizar tu <strong>cuenta corporativa</strong> de la GVA</p>
-</div>
-<p>Con esto lo que se consigue es crear un repositorio remoto donde se subirá el código de la actividad.</p>
 </li>
-<li>
-<p>Copia la URL del repositorio creado.</p>
-<div class="language-text highlight"><span class="filename">Ejemplo de URL del repositorio</span><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>https://github.com/DAM-DIN-25/act1-electron-intro-jsanvil
-</span></code></pre></div>
+<li><a href="05_angular_intro/">2.2 - Introducción a Angular</a><ul>
+<li><a href="051_actividad/">2.2.1 ✍️ Proyecto: Angular Events. Parte 1.</a></li>
+</ul>
 </li>
-<li>
-<p>Clona el repositorio en tu máquina local</p>
-<p>Puedes utilizar <em>VS Code</em> para clonar el repositorio o la terminal con el comando:</p>
-<div class="language-bash highlight"><span class="filename">Clonar el repositorio</span><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>git<span class="w"> </span>clone<span class="w"> </span>&lt;url-repositorio&gt;
-</span></code></pre></div>
+<li><a href="06_angular_databinding/">2.3 Data binding y pipes en Angular</a><ul>
+<li><a href="061_actividad/">2.3.1 ✍️ Proyecto: Angular Events. Parte 2.</a></li>
+<li><a href="062_actividad/">2.3.2 ✍️ Proyecto: Angular Events. Parte 3.</a></li>
+</ul>
 </li>
-<li>
-<p>Sigue los pasos del punto <a href="../02_electron_firstapp/">1.2 Creando la primera aplicación en Electron</a> para configurar el entorno de desarrollo y crear un proyecto <em>Electron</em>.</p>
-<div class="admonition warning">
-<p class="admonition-title">🚨🚨🚨 .gitignore 🚨🚨🚨</p>
-<p>No olvides añadir el archivo <code>.gitignore</code> en la raíz del proyecto para que no se suban los archivos innecesarios al repositorio.</p>
-<p><a href="https://raw.githubusercontent.com/github/gitignore/main/Node.gitignore">Ejemplo de archivo <code>.gitignore</code></a></p>
-</div>
-</li>
-<li>
-<p>Realiza los cambios necesarios en el código para que la aplicación muestre un mensaje de bienvenida personalizado.</p>
-</li>
-<li>
-<p>Realiza un <em>commit</em> con los cambios realizados y sube el código al repositorio remoto.</p>
-<div class="language-bash highlight"><span class="filename">Terminal</span><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>git<span class="w"> </span>add<span class="w"> </span>.
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;Actividad finalizada&quot;</span>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>git<span class="w"> </span>push
-</span></code></pre></div>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>Es posible que solicite configuración extra antes de hacer el primer <em>commit</em></p>
-<div class="language-bash highlight"><span class="filename">Terminal</span><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.name<span class="w"> </span><span class="s2">&quot;Nombre Apellido&quot;</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.email<span class="w"> </span><span class="s2">&quot;user@alu.edu.gva.es&quot;</span>
-</span></code></pre></div>
-</div>
-</li>
-<li>
-<p>Comprueba que los cambios se han subido correctamente al repositorio remoto.</p>
-</li>
-</ol>
+</ul>
 
 
 
@@ -1174,10 +1135,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "content.code.copy"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "content.code.copy"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      <script src="../assets/javascripts/bundle.92b07e13.min.js"></script>
       
     
   </body>

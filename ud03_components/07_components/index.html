@@ -1,0 +1,1883 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://jsanvil.github.io/din25/ud03_components/07_components/">
+      
+      
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../071_actividad/">
+      
+      
+      <link rel="icon" href="../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.17">
+    
+    
+      
+        <title>3.1 Componentes y Servicios en Angular - DIN 2025</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather+Sans:300,300i,400,400i,700,700i%7CRed+Hat+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Merriweather Sans";--md-code-font:"Red Hat Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="light-blue" data-md-color-accent="lime">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#31-componentes-y-servicios-en-angular" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="DIN 2025" class="md-header__button md-logo" aria-label="DIN 2025" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 14c1.33 0 4 .67 4 2v1h-8v-1c0-1.33 2.67-2 4-2m0-1c1.11 0 2-.89 2-2s-.89-2-2-2a2 2 0 1 0 0 4m7-5v10c0 1.11-.89 2-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h6l2 2h8a2 2 0 0 1 2 2m-2 0H4v10h16z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            DIN 2025
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              3.1 Componentes y Servicios en Angular
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="light-blue" data-md-color-accent="lime"  aria-label="Dark Mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Dark Mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="green"  aria-label="Light Mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Light Mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../.." class="md-tabs__link">
+          
+  
+  
+  Inicio
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../ud01_intro/" class="md-tabs__link">
+          
+  
+  
+  UD1 Intro
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../ud02_framework/" class="md-tabs__link">
+          
+  
+  
+  UD2 Framework
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+  UD3 Componentes
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="DIN 2025" class="md-nav__button md-logo" aria-label="DIN 2025" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 14c1.33 0 4 .67 4 2v1h-8v-1c0-1.33 2.67-2 4-2m0-1c1.11 0 2-.89 2-2s-.89-2-2-2a2 2 0 1 0 0 4m7-5v10c0 1.11-.89 2-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h6l2 2h8a2 2 0 0 1 2 2m-2 0H4v10h16z"/></svg>
+
+    </a>
+    DIN 2025
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Inicio
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Inicio
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Desarrollo de Interfaces 2025/26
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entorno/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entorno de desarrollo
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RRAA_CCEE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    RRAA y CCEE
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    UD1 Intro
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            UD1 Intro
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ud01_intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    UD1: Introducción
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ud01_intro/01_electron_intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    1.1 Introducción a Electron
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ud01_intro/02_electron_firstapp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    1.2 Creando la primera aplicación en Electron
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ud01_intro/021_actividad/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    1.2.1 ✍️ Actividad: Preparar el entorno y crear la primera aplicación en Electron
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ud01_intro/03_gui/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    1.3 Interfaz gráfica de usuario (GUI)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    UD2 Framework
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            UD2 Framework
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ud02_framework/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    UD2: Framework Angular
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ud02_framework/04_angular_electron/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.1 Trabajar con Angular y Electron
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ud02_framework/05_angular_intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.2 Introducción a Angular
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ud02_framework/06_angular_databinding/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.3 Data binding y pipes en Angular
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    📚 Proyecto Angular Events
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            📚 Proyecto Angular Events
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ud02_framework/051_actividad/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.2.1 ✍️ Proyecto: Angular Events. Parte 1.
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ud02_framework/061_actividad/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.3.1 ✍️ Proyecto: Angular Events. Parte 2.
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ud02_framework/062_actividad/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.3.2 ✍️ Proyecto: Angular Events. Parte 3.
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    UD3 Componentes
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            UD3 Componentes
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    UD2: Componentes en Angular
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    3.1 Componentes y Servicios en Angular
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    3.1 Componentes y Servicios en Angular
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#componentes-anidados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Componentes anidados
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Componentes anidados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#anidando-componentes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Anidando componentes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solución-selector-de-atributo-y-clase" class="md-nav__link">
+    <span class="md-ellipsis">
+      Solución. Selector de atributo y clase
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#anidar-starrating" class="md-nav__link">
+    <span class="md-ellipsis">
+      Anidar StarRating
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comunicación-entre-componentes-anidados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comunicación entre componentes anidados
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Comunicación entre componentes anidados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#decorador-input" class="md-nav__link">
+    <span class="md-ellipsis">
+      Decorador @input
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decorador-output" class="md-nav__link">
+    <span class="md-ellipsis">
+      Decorador @Output
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#servicios-inyección-de-dependencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      Servicios. Inyección de dependencias
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    📚 Proyecto Angular Events
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            📚 Proyecto Angular Events
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../071_actividad/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    3.1.1 ✍️ Proyecto: Angular Events. Parte 4.
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#componentes-anidados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Componentes anidados
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Componentes anidados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#anidando-componentes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Anidando componentes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solución-selector-de-atributo-y-clase" class="md-nav__link">
+    <span class="md-ellipsis">
+      Solución. Selector de atributo y clase
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#anidar-starrating" class="md-nav__link">
+    <span class="md-ellipsis">
+      Anidar StarRating
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comunicación-entre-componentes-anidados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comunicación entre componentes anidados
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Comunicación entre componentes anidados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#decorador-input" class="md-nav__link">
+    <span class="md-ellipsis">
+      Decorador @input
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decorador-output" class="md-nav__link">
+    <span class="md-ellipsis">
+      Decorador @Output
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#servicios-inyección-de-dependencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      Servicios. Inyección de dependencias
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="31-componentes-y-servicios-en-angular">3.1 Componentes y Servicios en Angular</h1>
+<ul>
+<li><a href="#componentes-anidados">Componentes anidados</a><ul>
+<li><a href="#anidando-componentes">Anidando componentes</a></li>
+<li><a href="#solución-selector-de-atributo-y-clase">Solución. Selector de atributo y clase</a></li>
+<li><a href="#anidar-starrating">Anidar <code>StarRating</code></a></li>
+</ul>
+</li>
+<li><a href="#comunicación-entre-componentes-anidados">Comunicación entre componentes anidados</a><ul>
+<li><a href="#decorador-input">Decorador <code>@input</code></a></li>
+<li><a href="#decorador-output">Decorador <code>@Output</code></a></li>
+</ul>
+</li>
+<li><a href="#servicios-inyección-de-dependencias">Servicios. Inyección de dependencias</a></li>
+</ul>
+<h2 id="componentes-anidados">Componentes anidados</h2>
+<p>Tal como se vió en la unidad anterior, los componentes pueden anidarse unos dentro de otros. Por ejemplo, cada elemento de una lista puede separarse en un componente independiente.</p>
+<p>Para el ejemplo se va a crear un nuevo componente llamado <code>product-item</code> que representará cada uno de los productos de la lista. El componente <code>product-list</code> se modificará para que utilice el nuevo componente.</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>ng<span class="w"> </span>g<span class="w"> </span>component<span class="w"> </span>product-item
+</span></code></pre></div>
+<p>También se creará un componente que servirá para puntuar un producto, que estará anidado dentro de <code>product-item</code>.</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>ng<span class="w"> </span>g<span class="w"> </span>component<span class="w"> </span>star-rating
+</span></code></pre></div>
+<h3 id="anidando-componentes">Anidando componentes</h3>
+<p>El nuevo componente <code>product-item</code> se utilizará para representar cada uno de los productos de la lista. De momento, se usarán datos estáticos para representar los productos, más adelante obtendrá los datos del componente padre.</p>
+<div class="language-ts highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">product-item.ts</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-2-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-2-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-2-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-2-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-2-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-2-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-2-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-2-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-2-10">10</a></span>
+<span class="normal"><a href="#__codelineno-2-11">11</a></span>
+<span class="normal"><a href="#__codelineno-2-12">12</a></span>
+<span class="normal"><a href="#__codelineno-2-13">13</a></span>
+<span class="normal"><a href="#__codelineno-2-14">14</a></span>
+<span class="normal"><a href="#__codelineno-2-15">15</a></span>
+<span class="normal"><a href="#__codelineno-2-16">16</a></span>
+<span class="normal"><a href="#__codelineno-2-17">17</a></span>
+<span class="normal"><a href="#__codelineno-2-18">18</a></span>
+<span class="normal"><a href="#__codelineno-2-19">19</a></span>
+<span class="normal"><a href="#__codelineno-2-20">20</a></span>
+<span class="normal"><a href="#__codelineno-2-21">21</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">Component</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;@angular/core&#39;</span><span class="p">;</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">Product</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;../interfaces/product&#39;</span><span class="p">;</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3"></a>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4"></a><span class="kd">@Component</span><span class="p">({</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5"></a><span class="w">  </span><span class="nx">selector</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;app-product-item&#39;</span><span class="p">,</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6"></a><span class="w">  </span><span class="nx">imports</span><span class="o">:</span><span class="w"> </span><span class="p">[],</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7"></a><span class="w">  </span><span class="nx">templateUrl</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;./product-item.html&#39;</span><span class="p">,</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8"></a><span class="w">  </span><span class="nx">styleUrl</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;./product-item.css&#39;</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9"></a><span class="p">})</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10"></a><span class="k">export</span><span class="w"> </span><span class="kd">class</span><span class="w"> </span><span class="nx">ProductItem</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11"></a><span class="w">  </span><span class="nx">product</span><span class="o">:</span><span class="w"> </span><span class="kt">Product</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12"></a><span class="w">    </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="kt">0</span><span class="p">,</span>
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13"></a><span class="w">    </span><span class="nx">description</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Product placeholder&#39;</span><span class="p">,</span>
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14"></a><span class="w">    </span><span class="nx">available</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;2024-01-01&#39;</span><span class="p">,</span>
+</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15"></a><span class="w">    </span><span class="nx">price</span><span class="o">:</span><span class="w"> </span><span class="kt">9999</span><span class="p">,</span>
+</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16"></a><span class="w">    </span><span class="nx">imageUrl</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;https://placehold.co/400&#39;</span><span class="p">,</span>
+</span><span id="__span-2-17"><a id="__codelineno-2-17" name="__codelineno-2-17"></a><span class="w">    </span><span class="nx">rating</span><span class="o">:</span><span class="w"> </span><span class="kt">5</span>
+</span><span id="__span-2-18"><a id="__codelineno-2-18" name="__codelineno-2-18"></a><span class="w">  </span><span class="p">};</span>
+</span><span id="__span-2-19"><a id="__codelineno-2-19" name="__codelineno-2-19"></a>
+</span><span id="__span-2-20"><a id="__codelineno-2-20" name="__codelineno-2-20"></a><span class="w">  </span><span class="nx">showImage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">;</span>
+</span><span id="__span-2-21"><a id="__codelineno-2-21" name="__codelineno-2-21"></a><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div>
+<p>Se almacena la información del producto en una variable llamada <code>product</code> que se utilizará a mode de <em>placeholder</em> para maquetar la información. La plantilla HTML del componente se modificará para que utilice esta información.</p>
+<div class="language-html+ng2 highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">product-item.html</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span>
+<span class="normal"><a href="#__codelineno-3-2">2</a></span>
+<span class="normal"><a href="#__codelineno-3-3">3</a></span>
+<span class="normal"><a href="#__codelineno-3-4">4</a></span>
+<span class="normal"><a href="#__codelineno-3-5">5</a></span>
+<span class="normal"><a href="#__codelineno-3-6">6</a></span>
+<span class="normal"><a href="#__codelineno-3-7">7</a></span>
+<span class="normal"><a href="#__codelineno-3-8">8</a></span>
+<span class="normal"><a href="#__codelineno-3-9">9</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2"></a>  <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;&lt;</span><span class="nt">img</span> <span class="p">[</span><span class="na">src</span><span class="p">]</span><span class="o">=</span><span class="s">&quot;product.imageUrl&quot;</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3"></a>         <span class="p">[</span><span class="na">class.d-none</span><span class="p">]</span><span class="o">=</span><span class="s">&quot;!showImage&quot;</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4"></a>         <span class="na">alt</span><span class="o">=</span><span class="s">&quot;imagen del producto&quot;</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5"></a>         <span class="p">[</span><span class="na">title</span><span class="p">]</span><span class="o">=</span><span class="s">&quot;product.description | uppercase&quot;</span> <span class="p">/&gt;&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6"></a>  <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span><span class="cp">{{</span><span class="nv">product.description</span><span class="cp">}}</span><span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7"></a>  <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span><span class="cp">{{</span><span class="nv">product.price</span> | <span class="nv">currency</span> <span class="err">:</span> <span class="s1">&#39;EUR&#39;</span> <span class="err">:</span> <span class="s1">&#39;symbol&#39;</span><span class="cp">}}</span><span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8"></a>  <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span><span class="cp">{{</span><span class="nv">product.available</span> | <span class="nv">date</span><span class="err">:</span> <span class="s1">&#39;dd/MM/y&#39;</span><span class="cp">}}</span><span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9"></a><span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+</span></code></pre></div></td></tr></table></div>
+<p>Básicamente, se ha copiado el código HTML de la tabla de la lista de productos, para que muestre una fila de la tabla <code>&lt;tr&gt;</code>. Ahora se puede modificar el componente <code>products-list</code> para que utilice el nuevo componente.</p>
+<div class="language-html+ng2 highlight"><span class="filename">products-list.html</span><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>...
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>        <span class="p">&lt;</span><span class="nt">tbody</span><span class="p">&gt;</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>          @for<span class="err">(</span>product of products | productFilter:filterSearch; track product.id) <span class="err">{</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>          <span class="p">&lt;</span><span class="nt">app-product-item</span><span class="p">&gt;&lt;/</span><span class="nt">app-product-item</span><span class="p">&gt;</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>          }
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>        <span class="p">&lt;/</span><span class="nt">tbody</span><span class="p">&gt;</span>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>...
+</span></code></pre></div>
+<p>Debemos importar el componente <code>ProductItem</code> en <code>products-list.ts</code>:</p>
+<div class="language-typescript highlight"><span class="filename">products-list.ts</span><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="p">...</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="hll"><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">ProductItem</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;../product-item/product-item&#39;</span><span class="p">;</span>
+</span></span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="kd">@Component</span><span class="p">({</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="w">  </span><span class="c1">//...</span>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="w">  </span><span class="nx">imports</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="w">    </span><span class="c1">//...</span>
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="hll"><span class="w">    </span><span class="nx">ProductItem</span>
+</span></span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="w">  </span><span class="p">],</span>
+</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="w">  </span><span class="c1">//...</span>
+</span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="p">})</span>
+</span><span id="__span-5-12"><a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a><span class="k">export</span><span class="w"> </span><span class="kd">class</span><span class="w"> </span><span class="nx">ProductsList</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-5-13"><a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a><span class="w">  </span><span class="c1">//...</span>
+</span></code></pre></div>
+<p>También se debe mover los estilos CSS de la tabla a <code>product-item.css</code>:</p>
+<div class="language-css highlight"><span class="filename">product-item.css</span><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="nt">th</span><span class="o">,</span><span class="w"> </span><span class="nt">td</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">  </span><span class="k">vertical-align</span><span class="p">:</span><span class="w"> </span><span class="kc">middle</span><span class="p">;</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="p">}</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="nt">td</span><span class="w"> </span><span class="nt">img</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="w">  </span><span class="k">height</span><span class="p">:</span><span class="w"> </span><span class="mi">50</span><span class="kt">px</span><span class="p">;</span>
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="p">}</span>
+</span></code></pre></div>
+<p><img alt="Tabla de productos con componentes anidados" src="../img/ud6_3_1.png" /></p>
+<p>Se puede observar que la estructura de la tabla no es correcta, hay un problema con las filas <code>&lt;tr&gt;</code> y las columnas <code>&lt;td&gt;</code>. Esto se debe a que el componente <code>&lt;app-product-item&gt;</code> está situado entre la tabla y cada fila y el navegador no puede interpretar correctamente la estructura de la tabla.</p>
+<h3 id="solución-selector-de-atributo-y-clase">Solución. Selector de atributo y clase</h3>
+<p>En el selector del componente, en lugar de crear un nuevo elemento <code>selector: 'app-product-item'</code>, se puede utilizar un selector, tipo CSS, de clase <code>selector: '.product-item'</code> o de atributo <code>selector: '[app-product-item]'</code>. De esta forma, el componente se cargará dentro del elemento al que se añada esta clase o atributo y no se creará un componente adicional.</p>
+<div class="language-ts highlight"><span class="filename">product-item.ts</span><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="c1">//...</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="kd">@Component</span><span class="p">({</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="hll"><span class="w">  </span><span class="nx">selector</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;[app-product-item]&#39;</span><span class="p">,</span>
+</span></span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="w">  </span><span class="c1">//...</span>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="p">})</span>
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="k">export</span><span class="w"> </span><span class="kd">class</span><span class="w"> </span><span class="nx">ProductItem</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="c1">//...</span>
+</span></code></pre></div>
+<p>Se elimina la etiqueta <code>&lt;tr&gt;</code> de la plantilla HTML del componente <code>product-item</code> al componente <code>product-item</code>:</p>
+<div class="language-html+ng2 highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">product-item.html</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-8-1">1</a></span>
+<span class="normal"><a href="#__codelineno-8-2">2</a></span>
+<span class="normal"><a href="#__codelineno-8-3">3</a></span>
+<span class="normal"><a href="#__codelineno-8-4">4</a></span>
+<span class="normal"><a href="#__codelineno-8-5">5</a></span>
+<span class="normal"><a href="#__codelineno-8-6">6</a></span>
+<span class="normal"><a href="#__codelineno-8-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1"></a><span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;&lt;</span><span class="nt">img</span> <span class="p">[</span><span class="na">src</span><span class="p">]</span><span class="o">=</span><span class="s">&quot;product.imageUrl&quot;</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2"></a>       <span class="p">[</span><span class="na">class.d-none</span><span class="p">]</span><span class="o">=</span><span class="s">&quot;!showImage&quot;</span>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3"></a>       <span class="na">alt</span><span class="o">=</span><span class="s">&quot;imagen del producto&quot;</span>
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4"></a>       <span class="p">[</span><span class="na">title</span><span class="p">]</span><span class="o">=</span><span class="s">&quot;product.description | uppercase&quot;</span> <span class="p">/&gt;&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5"></a><span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span><span class="cp">{{</span><span class="nv">product.description</span><span class="cp">}}</span><span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6"></a><span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span><span class="cp">{{</span><span class="nv">product.price</span> | <span class="nv">currency</span> <span class="err">:</span> <span class="s1">&#39;EUR&#39;</span> <span class="err">:</span> <span class="s1">&#39;symbol&#39;</span><span class="cp">}}</span><span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7"></a><span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span><span class="cp">{{</span><span class="nv">product.available</span> | <span class="nv">date</span><span class="err">:</span> <span class="s1">&#39;dd/MM/y&#39;</span><span class="cp">}}</span><span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></code></pre></div></td></tr></table></div>
+<p>Ahora, la plantilla <code>products-list.html</code> se puede modificar para que utilice el selector de atributo:</p>
+<div class="language-html+ng2 highlight"><span class="filename">products-list.html</span><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>//...
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>        <span class="p">&lt;</span><span class="nt">tbody</span><span class="p">&gt;</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>          @for<span class="err">(</span>product of products | productFilter:filterSearch; track product.id) <span class="err">{</span>
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="hll">          <span class="p">&lt;</span><span class="nt">tr</span> <span class="na">app-product-item</span><span class="p">&gt;&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+</span></span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>          }
+</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>        <span class="p">&lt;/</span><span class="nt">tbody</span><span class="p">&gt;</span>
+</span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>//...
+</span></code></pre></div>
+<h3 id="anidar-starrating">Anidar <code>StarRating</code></h3>
+<p>El siguiente paso es implementar el componente <code>star-rating</code>, que presentará un sistema de puntuación de 1 a 5, representado con estrellas. Para mostrar las estrellas se podrían utilizar caracteres <em>unicode</em> (★/☆) o imágenes. En este caso se utilizarán imágenes de la librería bootstrap-icons.</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>npm<span class="w"> </span>install<span class="w"> </span>bootstrap-icons
+</span></code></pre></div>
+<p>Y se añade a <code>styles.css</code> para que cargue los iconos de bootstrap:</p>
+<div class="language-css highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">styles.css</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-11-1">1</a></span>
+<span class="normal"><a href="#__codelineno-11-2">2</a></span>
+<span class="normal"><a href="#__codelineno-11-3">3</a></span>
+<span class="normal"><a href="#__codelineno-11-4">4</a></span>
+<span class="normal"><a href="#__codelineno-11-5">5</a></span>
+<span class="normal"><a href="#__codelineno-11-6">6</a></span>
+<span class="normal"><a href="#__codelineno-11-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1"></a><span class="c">/* You can add global styles to this file, and also import other style files */</span>
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2"></a>
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3"></a><span class="p">@</span><span class="k">import</span><span class="w"> </span><span class="s2">&quot;bootstrap/dist/css/bootstrap.min.css&quot;</span><span class="p">;</span>
+</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4"></a><span class="hll"><span class="p">@</span><span class="k">import</span><span class="w"> </span><span class="s2">&quot;bootstrap-icons/font/bootstrap-icons.min.css&quot;</span><span class="p">;</span>
+</span></span><span id="__span-11-5"><a id="__codelineno-11-5" name="__codelineno-11-5"></a>
+</span><span id="__span-11-6"><a id="__codelineno-11-6" name="__codelineno-11-6"></a><span class="nt">html</span><span class="o">,</span><span class="w"> </span><span class="nt">body</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">height</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="kt">%</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+</span><span id="__span-11-7"><a id="__codelineno-11-7" name="__codelineno-11-7"></a><span class="nt">body</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">margin</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="k">font-family</span><span class="p">:</span><span class="w"> </span><span class="n">Roboto</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Helvetica Neue&quot;</span><span class="p">,</span><span class="w"> </span><span class="kc">sans-serif</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div>
+<p>Ahora se va a crear el código del componente <code>star-rating</code>:</p>
+<div class="language-ts highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">star-rating.ts</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-12-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-12-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-12-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-12-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-12-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-12-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-12-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-12-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-12-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-12-10">10</a></span>
+<span class="normal"><a href="#__codelineno-12-11">11</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">Component</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;@angular/core&#39;</span><span class="p">;</span>
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2"></a>
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3"></a><span class="kd">@Component</span><span class="p">({</span>
+</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4"></a><span class="w">  </span><span class="nx">selector</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;app-star-rating&#39;</span><span class="p">,</span>
+</span><span id="__span-12-5"><a id="__codelineno-12-5" name="__codelineno-12-5"></a><span class="w">  </span><span class="nx">imports</span><span class="o">:</span><span class="w"> </span><span class="p">[],</span>
+</span><span id="__span-12-6"><a id="__codelineno-12-6" name="__codelineno-12-6"></a><span class="w">  </span><span class="nx">templateUrl</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;./star-rating.html&#39;</span><span class="p">,</span>
+</span><span id="__span-12-7"><a id="__codelineno-12-7" name="__codelineno-12-7"></a><span class="w">  </span><span class="nx">styleUrl</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;./star-rating.css&#39;</span>
+</span><span id="__span-12-8"><a id="__codelineno-12-8" name="__codelineno-12-8"></a><span class="p">})</span>
+</span><span id="__span-12-9"><a id="__codelineno-12-9" name="__codelineno-12-9"></a><span class="k">export</span><span class="w"> </span><span class="kd">class</span><span class="w"> </span><span class="nx">StarRating</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-12-10"><a id="__codelineno-12-10" name="__codelineno-12-10"></a><span class="w">  </span><span class="nx">rating</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">4</span><span class="p">;</span>
+</span><span id="__span-12-11"><a id="__codelineno-12-11" name="__codelineno-12-11"></a><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div>
+<p>Y la plantilla HTML:</p>
+<div class="language-html+ng2 highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">star-rating.html</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-13-1">1</a></span>
+<span class="normal"><a href="#__codelineno-13-2">2</a></span>
+<span class="normal"><a href="#__codelineno-13-3">3</a></span>
+<span class="normal"><a href="#__codelineno-13-4">4</a></span>
+<span class="normal"><a href="#__codelineno-13-5">5</a></span>
+<span class="normal"><a href="#__codelineno-13-6">6</a></span>
+<span class="normal"><a href="#__codelineno-13-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;star-container&quot;</span><span class="p">&gt;</span>
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2"></a>  @for<span class="err">(</span>star of <span class="err">[</span>1,2,3,4,5]; track $index) <span class="err">{</span>
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3"></a>  <span class="p">&lt;</span><span class="nt">i</span> <span class="p">[</span><span class="na">class.bi-star-fill</span><span class="p">]</span><span class="o">=</span><span class="s">&quot;star &lt;= rating&quot;</span>
+</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4"></a>     <span class="p">[</span><span class="na">class.bi-star</span><span class="p">]</span><span class="o">=</span><span class="s">&quot;star &gt; rating&quot;</span><span class="p">&gt;</span>
+</span><span id="__span-13-5"><a id="__codelineno-13-5" name="__codelineno-13-5"></a>  <span class="p">&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>
+</span><span id="__span-13-6"><a id="__codelineno-13-6" name="__codelineno-13-6"></a>  }
+</span><span id="__span-13-7"><a id="__codelineno-13-7" name="__codelineno-13-7"></a><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></code></pre></div></td></tr></table></div>
+<p>Con el componente creado, se debe importar en <code>product-item.ts</code>:</p>
+<div class="language-typescript highlight"><span class="filename">product-item.ts</span><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="c1">//...</span>
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="hll"><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">StarRating</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;../star-rating/star-rating&#39;</span><span class="p">;</span>
+</span></span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>
+</span><span id="__span-14-4"><a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a><span class="kd">@Component</span><span class="p">({</span>
+</span><span id="__span-14-5"><a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a><span class="w">  </span><span class="c1">//...</span>
+</span><span id="__span-14-6"><a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a><span class="w">  </span><span class="nx">imports</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+</span><span id="__span-14-7"><a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a><span class="hll"><span class="w">    </span><span class="nx">StarRating</span><span class="p">,</span>
+</span></span><span id="__span-14-8"><a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a><span class="w">    </span><span class="c1">//...</span>
+</span><span id="__span-14-9"><a id="__codelineno-14-9" name="__codelineno-14-9" href="#__codelineno-14-9"></a><span class="w">  </span><span class="p">],</span>
+</span><span id="__span-14-10"><a id="__codelineno-14-10" name="__codelineno-14-10" href="#__codelineno-14-10"></a><span class="w">  </span><span class="c1">//...</span>
+</span><span id="__span-14-11"><a id="__codelineno-14-11" name="__codelineno-14-11" href="#__codelineno-14-11"></a><span class="p">})</span>
+</span><span id="__span-14-12"><a id="__codelineno-14-12" name="__codelineno-14-12" href="#__codelineno-14-12"></a><span class="k">export</span><span class="w"> </span><span class="kd">class</span><span class="w"> </span><span class="nx">ProductItem</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-14-13"><a id="__codelineno-14-13" name="__codelineno-14-13" href="#__codelineno-14-13"></a><span class="w">  </span><span class="c1">//...</span>
+</span></code></pre></div>
+<p>A continuación, se modifica la plantilla HTML del componente <code>product-item</code> para añadir un nuevo elemento <code>&lt;td&gt;</code> con la valoración del producto:</p>
+<div class="language-html+ng2 highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">product-item.html</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-15-1">1</a></span>
+<span class="normal"><a href="#__codelineno-15-2">2</a></span>
+<span class="normal"><a href="#__codelineno-15-3">3</a></span>
+<span class="normal"><a href="#__codelineno-15-4">4</a></span>
+<span class="normal"><a href="#__codelineno-15-5">5</a></span>
+<span class="normal"><a href="#__codelineno-15-6">6</a></span>
+<span class="normal"><a href="#__codelineno-15-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1"></a><span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;&lt;</span><span class="nt">img</span> <span class="p">[</span><span class="na">src</span><span class="p">]</span><span class="o">=</span><span class="s">&quot;product.imageUrl&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;&quot;</span>
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2"></a>       <span class="p">[</span><span class="na">ngClass</span><span class="p">]</span><span class="o">=</span><span class="s">&quot;{&#39;d-none&#39;: !showImage}&quot;</span>
+</span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3"></a>       <span class="p">[</span><span class="na">title</span><span class="p">]</span><span class="o">=</span><span class="s">&quot;product.description | uppercase&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span><span id="__span-15-4"><a id="__codelineno-15-4" name="__codelineno-15-4"></a><span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span><span class="cp">{{</span><span class="nv">product.description</span><span class="cp">}}</span><span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span><span id="__span-15-5"><a id="__codelineno-15-5" name="__codelineno-15-5"></a><span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span><span class="cp">{{</span><span class="nv">product.price</span> | <span class="nv">currency</span><span class="s1">:&#39;EUR&#39;:&#39;symbol&#39;</span><span class="cp">}}</span><span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span><span id="__span-15-6"><a id="__codelineno-15-6" name="__codelineno-15-6"></a><span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span><span class="cp">{{</span><span class="nv">product.available</span> | <span class="nv">date</span><span class="s1">:&#39;dd/MM/y&#39;</span><span class="cp">}}</span><span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span><span id="__span-15-7"><a id="__codelineno-15-7" name="__codelineno-15-7"></a><span class="hll"><span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;&lt;</span><span class="nt">app-star-rating</span><span class="p">&gt;&lt;/</span><span class="nt">app-star-rating</span><span class="p">&gt;&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span></code></pre></div></td></tr></table></div>
+<p><img alt="Tabla de productos con valoración" src="../img/ud6_3_2.png" /></p>
+<h2 id="comunicación-entre-componentes-anidados">Comunicación entre componentes anidados</h2>
+<p>En el ejemplo anterior, el componente <code>product-item</code> se ha creado con datos estáticos. Aún no se ha implementado la funcionalidad para presentar los datos de cada producto, puesto que aún no sabemos cómo se comunican los componentes entre sí.</p>
+<h3 id="decorador-input">Decorador <code>@input</code></h3>
+<p>Para indicar que un componente recibe datos de entrada por parte del componente padre, creamos una nueva propiedad y la decoramos con <code>@Input()</code>. Esto indica a <em>Angular</em>, que el valor de la propiedad será obtenido a partir de un atributo con el mismo nombre, en el selector HTML del componente actual.</p>
+<p>A modo de ejemplo, se va a pasar al componente <code>product-item</code>, los datos del producto a mostrar y el booleano que indica si la imagen debe mostrarse:</p>
+<div class="language-html+ng2 highlight"><span class="filename">products-list.html</span><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>//...
+</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>        <span class="p">&lt;</span><span class="nt">tbody</span><span class="p">&gt;</span>
+</span><span id="__span-16-3"><a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a>          @for<span class="err">(</span>product of products | productFilter:filterSearch; track product.id) <span class="err">{</span>
+</span><span id="__span-16-4"><a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a>          <span class="p">&lt;</span><span class="nt">tr</span> <span class="na">app-product-item</span>
+</span><span id="__span-16-5"><a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a><span class="hll">              <span class="p">[</span><span class="na">product</span><span class="p">]</span><span class="o">=</span><span class="s">&quot;product&quot;</span>
+</span></span><span id="__span-16-6"><a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a><span class="hll">              <span class="p">[</span><span class="na">showImage</span><span class="p">]</span><span class="o">=</span><span class="s">&quot;showImage&quot;</span><span class="p">&gt;</span>
+</span></span><span id="__span-16-7"><a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a>          <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+</span><span id="__span-16-8"><a id="__codelineno-16-8" name="__codelineno-16-8" href="#__codelineno-16-8"></a>          }
+</span><span id="__span-16-9"><a id="__codelineno-16-9" name="__codelineno-16-9" href="#__codelineno-16-9"></a>        <span class="p">&lt;/</span><span class="nt">tbody</span><span class="p">&gt;</span>
+</span><span id="__span-16-10"><a id="__codelineno-16-10" name="__codelineno-16-10" href="#__codelineno-16-10"></a>//...
+</span></code></pre></div>
+<p>Y se modifica el componente <code>product-item.ts</code> para que reciba los datos del producto y el booleano:</p>
+<div class="language-ts highlight"><span class="filename">product-item.ts</span><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="hll"><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">Component</span><span class="p">,</span><span class="w"> </span><span class="nx">Input</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;@angular/core&#39;</span><span class="p">;</span>
+</span></span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="c1">//...</span>
+</span><span id="__span-17-3"><a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a><span class="k">export</span><span class="w"> </span><span class="kd">class</span><span class="w"> </span><span class="nx">ProductItem</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-17-4"><a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a><span class="hll"><span class="w">  </span><span class="kd">@Input</span><span class="p">()</span><span class="w"> </span><span class="nx">product</span><span class="o">!:</span><span class="w"> </span><span class="nx">Product</span><span class="p">;</span>
+</span></span><span id="__span-17-5"><a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a><span class="hll"><span class="w">  </span><span class="kd">@Input</span><span class="p">()</span><span class="w"> </span><span class="nx">showImage</span><span class="o">!:</span><span class="w"> </span><span class="kt">boolean</span><span class="p">;</span>
+</span></span><span id="__span-17-6"><a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a><span class="w">  </span><span class="c1">//...</span>
+</span><span id="__span-17-7"><a id="__codelineno-17-7" name="__codelineno-17-7" href="#__codelineno-17-7"></a><span class="p">}</span>
+</span></code></pre></div>
+<p>El símbolo <code>!</code> indica que la propiedad puede no tener valor (<code>null</code> o <code>undefined</code>). Esto es debido a que el valor de la propiedad se obtendrá del componente padre, por lo que no es necesario inicializarla.</p>
+<p>Para terminar, se debe modificar el componente <code>star-rating</code> para que reciba la valoración del producto:</p>
+<div class="language-html+ng2 highlight"><span class="filename">product-item.html</span><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;&lt;</span><span class="nt">app-star-rating</span> <span class="p">[</span><span class="na">rating</span><span class="p">]</span><span class="o">=</span><span class="s">&quot;product.rating&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">app-star-rating</span><span class="p">&gt;&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></code></pre></div>
+<div class="language-ts highlight"><span class="filename">star-rating.ts</span><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="hll"><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">Component</span><span class="p">,</span><span class="w"> </span><span class="nx">Input</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;@angular/core&#39;</span><span class="p">;</span>
+</span></span><span id="__span-19-2"><a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a><span class="c1">//...</span>
+</span><span id="__span-19-3"><a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a><span class="k">export</span><span class="w"> </span><span class="kd">class</span><span class="w"> </span><span class="nx">StarRating</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-19-4"><a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a><span class="hll"><span class="w">  </span><span class="kd">@Input</span><span class="p">()</span><span class="w"> </span><span class="nx">rating</span><span class="o">!:</span><span class="w"> </span><span class="kt">number</span><span class="p">;</span>
+</span></span><span id="__span-19-5"><a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a><span class="p">}</span>
+</span></code></pre></div>
+<p><img alt="Tabla de productos con datos dinámicos" src="../img/ud6_3_3.png" /></p>
+<h3 id="decorador-output">Decorador <code>@Output</code></h3>
+<p>Para comunicar un componente hijo con el padre, se utiliza el decorador <code>@Output()</code>. Este decorador se utiliza para indicar que un componente hijo puede emitir un evento que será capturado por el componente padre.</p>
+<p>Se va a implementar una funcionalidad para que cuando se sitúe el puntero encima de una estrella, cambiar la puntuación del producto. Para ello, no se debe modificar el valor de la propiedad de entrada <code>@Input()</code>, ya que se desvincularía del padre y dejarían de actualizarse los datos automáticamente. Se creará una propiedad auxiliar <code>auxRating</code> inicializada al mismo valor recibido del componente padre.</p>
+<p>Cuando se retire el cursor del componente, se restablecerá el valor de <code>auxRating</code> a la puntuación original:</p>
+<div class="language-ts highlight"><span class="filename">star-rating.ts</span><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">Component</span><span class="p">,</span><span class="w"> </span><span class="nx">Input</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;@angular/core&#39;</span><span class="p">;</span>
+</span><span id="__span-20-2"><a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">CommonModule</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;@angular/common&#39;</span><span class="p">;</span>
+</span><span id="__span-20-3"><a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a>
+</span><span id="__span-20-4"><a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a><span class="kd">@Component</span><span class="p">({</span>
+</span><span id="__span-20-5"><a id="__codelineno-20-5" name="__codelineno-20-5" href="#__codelineno-20-5"></a><span class="w">  </span><span class="nx">selector</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;app-star-rating&#39;</span><span class="p">,</span>
+</span><span id="__span-20-6"><a id="__codelineno-20-6" name="__codelineno-20-6" href="#__codelineno-20-6"></a><span class="w">  </span><span class="nx">standalone</span><span class="o">:</span><span class="w"> </span><span class="kt">true</span><span class="p">,</span>
+</span><span id="__span-20-7"><a id="__codelineno-20-7" name="__codelineno-20-7" href="#__codelineno-20-7"></a><span class="w">  </span><span class="nx">imports</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="nx">CommonModule</span><span class="p">],</span>
+</span><span id="__span-20-8"><a id="__codelineno-20-8" name="__codelineno-20-8" href="#__codelineno-20-8"></a><span class="w">  </span><span class="nx">templateUrl</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;./star-rating.html&#39;</span><span class="p">,</span>
+</span><span id="__span-20-9"><a id="__codelineno-20-9" name="__codelineno-20-9" href="#__codelineno-20-9"></a><span class="w">  </span><span class="nx">styleUrl</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;./star-rating.css&#39;</span>
+</span><span id="__span-20-10"><a id="__codelineno-20-10" name="__codelineno-20-10" href="#__codelineno-20-10"></a><span class="p">})</span>
+</span><span id="__span-20-11"><a id="__codelineno-20-11" name="__codelineno-20-11" href="#__codelineno-20-11"></a><span class="k">export</span><span class="w"> </span><span class="kd">class</span><span class="w"> </span><span class="nx">StarRating</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-20-12"><a id="__codelineno-20-12" name="__codelineno-20-12" href="#__codelineno-20-12"></a><span class="w">  </span><span class="nx">auxRating</span><span class="o">!:</span><span class="w"> </span><span class="kt">number</span><span class="p">;</span>
+</span><span id="__span-20-13"><a id="__codelineno-20-13" name="__codelineno-20-13" href="#__codelineno-20-13"></a><span class="w">  </span><span class="kd">@Input</span><span class="p">()</span><span class="w"> </span><span class="nx">rating</span><span class="o">!:</span><span class="w"> </span><span class="kt">number</span><span class="p">;</span>
+</span><span id="__span-20-14"><a id="__codelineno-20-14" name="__codelineno-20-14" href="#__codelineno-20-14"></a>
+</span><span id="__span-20-15"><a id="__codelineno-20-15" name="__codelineno-20-15" href="#__codelineno-20-15"></a><span class="w">  </span><span class="nx">ngOnInit</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-20-16"><a id="__codelineno-20-16" name="__codelineno-20-16" href="#__codelineno-20-16"></a><span class="w">    </span><span class="k">this</span><span class="p">.</span><span class="nx">restoreRating</span><span class="p">();</span>
+</span><span id="__span-20-17"><a id="__codelineno-20-17" name="__codelineno-20-17" href="#__codelineno-20-17"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-20-18"><a id="__codelineno-20-18" name="__codelineno-20-18" href="#__codelineno-20-18"></a>
+</span><span id="__span-20-19"><a id="__codelineno-20-19" name="__codelineno-20-19" href="#__codelineno-20-19"></a><span class="w">  </span><span class="nx">restoreRating</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-20-20"><a id="__codelineno-20-20" name="__codelineno-20-20" href="#__codelineno-20-20"></a><span class="w">    </span><span class="k">this</span><span class="p">.</span><span class="nx">auxRating</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">rating</span><span class="p">;</span>
+</span><span id="__span-20-21"><a id="__codelineno-20-21" name="__codelineno-20-21" href="#__codelineno-20-21"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-20-22"><a id="__codelineno-20-22" name="__codelineno-20-22" href="#__codelineno-20-22"></a><span class="p">}</span>
+</span></code></pre></div>
+<p>En la plantilla HTML, se añade un evento <code>mouseover</code> que llamará al método <code>setRating</code> cuando el puntero se sitúe encima de una estrella, y otro evento <code>mouseleave</code> que llamará al método <code>restoreRating</code> cuando el puntero se retire del componente:</p>
+<div class="language-html+ng2 highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">star-rating.html</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-21-1">1</a></span>
+<span class="normal"><a href="#__codelineno-21-2">2</a></span>
+<span class="normal"><a href="#__codelineno-21-3">3</a></span>
+<span class="normal"><a href="#__codelineno-21-4">4</a></span>
+<span class="normal"><a href="#__codelineno-21-5">5</a></span>
+<span class="normal"><a href="#__codelineno-21-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;star-container&quot;</span> <span class="p">(</span><span class="na">mouseleave</span><span class="p">)</span><span class="o">=</span><span class="s">&quot;restoreRating()&quot;</span><span class="p">&gt;</span>
+</span><span id="__span-21-2"><a id="__codelineno-21-2" name="__codelineno-21-2"></a>  @for<span class="err">(</span>star of <span class="err">[</span>1,2,3,4,5]; track $index) <span class="err">{</span>
+</span><span id="__span-21-3"><a id="__codelineno-21-3" name="__codelineno-21-3"></a>  <span class="p">&lt;</span><span class="nt">i</span> <span class="p">[</span><span class="na">ngClass</span><span class="p">]</span><span class="o">=</span><span class="s">&quot;{&#39;bi-star-fill&#39;: star &lt;= auxRating, &#39;bi-star&#39;: star &gt; auxRating}&quot;</span>
+</span><span id="__span-21-4"><a id="__codelineno-21-4" name="__codelineno-21-4"></a>     <span class="p">(</span><span class="na">mouseenter</span><span class="p">)</span><span class="o">=</span><span class="s">&quot;auxRating = star&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>
+</span><span id="__span-21-5"><a id="__codelineno-21-5" name="__codelineno-21-5"></a>  }
+</span><span id="__span-21-6"><a id="__codelineno-21-6" name="__codelineno-21-6"></a><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></code></pre></div></td></tr></table></div>
+<p>De esta forma funciona al pasar el puntero por encima, pero falta que se actualice al hacer clic sobre una estrella. Para ello se va a utilizar el decorador <code>@Output()</code> para emitir un evento cuando se haga clic sobre una estrella. Este evento será capturado por el componente padre, que actualizará la puntuación del producto.</p>
+<div class="language-html+ng2 highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">star-rating.html</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-22-1">1</a></span>
+<span class="normal"><a href="#__codelineno-22-2">2</a></span>
+<span class="normal"><a href="#__codelineno-22-3">3</a></span>
+<span class="normal"><a href="#__codelineno-22-4">4</a></span>
+<span class="normal"><a href="#__codelineno-22-5">5</a></span>
+<span class="normal"><a href="#__codelineno-22-6">6</a></span>
+<span class="normal"><a href="#__codelineno-22-7">7</a></span>
+<span class="normal"><a href="#__codelineno-22-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;star-container&quot;</span> <span class="p">(</span><span class="na">mouseleave</span><span class="p">)</span><span class="o">=</span><span class="s">&quot;restoreRating()&quot;</span><span class="p">&gt;</span>
+</span><span id="__span-22-2"><a id="__codelineno-22-2" name="__codelineno-22-2"></a>  @for<span class="err">(</span>star of <span class="err">[</span>1,2,3,4,5]; track $index) <span class="err">{</span>
+</span><span id="__span-22-3"><a id="__codelineno-22-3" name="__codelineno-22-3"></a>  <span class="p">&lt;</span><span class="nt">i</span> <span class="p">[</span><span class="na">ngClass</span><span class="p">]</span><span class="o">=</span><span class="s">&quot;{&#39;bi-star-fill&#39;: star &lt;= auxRating, &#39;bi-star&#39;: star &gt; auxRating}&quot;</span>
+</span><span id="__span-22-4"><a id="__codelineno-22-4" name="__codelineno-22-4"></a>     <span class="p">(</span><span class="na">mouseenter</span><span class="p">)</span><span class="o">=</span><span class="s">&quot;auxRating = star&quot;</span>
+</span><span id="__span-22-5"><a id="__codelineno-22-5" name="__codelineno-22-5"></a><span class="hll">     <span class="p">(</span><span class="na">click</span><span class="p">)</span><span class="o">=</span><span class="s">&quot;setRating()&quot;</span><span class="p">&gt;</span>
+</span></span><span id="__span-22-6"><a id="__codelineno-22-6" name="__codelineno-22-6"></a>  <span class="p">&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>
+</span><span id="__span-22-7"><a id="__codelineno-22-7" name="__codelineno-22-7"></a>  }
+</span><span id="__span-22-8"><a id="__codelineno-22-8" name="__codelineno-22-8"></a><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></code></pre></div></td></tr></table></div>
+<p>Esto hará que el método <code>setRating()</code> emita un evento al componente padre con la nueva puntuación. Para ello, se crea un emisor de eventos con el decorador <code>@Output</code>. El evento se llamará <code>ratingChanged</code> y emitirá un número, que será la nueva puntuación del producto.</p>
+<div class="language-typescript highlight"><span class="filename">star-rating.ts</span><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="c1">//...</span>
+</span><span id="__span-23-2"><a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a><span class="k">export</span><span class="w"> </span><span class="kd">class</span><span class="w"> </span><span class="nx">StarRating</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-23-3"><a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a><span class="w">  </span><span class="c1">//...</span>
+</span><span id="__span-23-4"><a id="__codelineno-23-4" name="__codelineno-23-4" href="#__codelineno-23-4"></a>
+</span><span id="__span-23-5"><a id="__codelineno-23-5" name="__codelineno-23-5" href="#__codelineno-23-5"></a><span class="hll"><span class="w">  </span><span class="kd">@Output</span><span class="p">()</span><span class="w"> </span><span class="nx">ratingChanged</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">EventEmitter</span><span class="o">&lt;</span><span class="kt">number</span><span class="o">&gt;</span><span class="p">();</span>
+</span></span><span id="__span-23-6"><a id="__codelineno-23-6" name="__codelineno-23-6" href="#__codelineno-23-6"></a>
+</span><span id="__span-23-7"><a id="__codelineno-23-7" name="__codelineno-23-7" href="#__codelineno-23-7"></a><span class="hll"><span class="w">  </span><span class="nx">setRating</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span></span><span id="__span-23-8"><a id="__codelineno-23-8" name="__codelineno-23-8" href="#__codelineno-23-8"></a><span class="hll"><span class="w">    </span><span class="k">this</span><span class="p">.</span><span class="nx">ratingChanged</span><span class="p">.</span><span class="nx">emit</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">auxRating</span><span class="p">);</span>
+</span></span><span id="__span-23-9"><a id="__codelineno-23-9" name="__codelineno-23-9" href="#__codelineno-23-9"></a><span class="hll"><span class="w">  </span><span class="p">}</span>
+</span></span><span id="__span-23-10"><a id="__codelineno-23-10" name="__codelineno-23-10" href="#__codelineno-23-10"></a>
+</span><span id="__span-23-11"><a id="__codelineno-23-11" name="__codelineno-23-11" href="#__codelineno-23-11"></a><span class="w">  </span><span class="c1">//...</span>
+</span><span id="__span-23-12"><a id="__codelineno-23-12" name="__codelineno-23-12" href="#__codelineno-23-12"></a><span class="p">}</span>
+</span></code></pre></div>
+<p>En el componente <code>product-item</code> se capturará el evento <code>ratingChanged</code>, se accederá al valor emitido (la nueva puntuación) con la variable especial <code>$event</code>. En este caso, como se modifica la propiedad de un objeto, no hace falta que lo haga el componente padre <code>products-list</code> que contiene el array de objetos, ya que los objetos siempre se pasan por referencia.</p>
+<div class="language-html+ng2 highlight"><span class="filename">product-item.html</span><pre><span></span><code><span id="__span-24-1"><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a>//...
+</span><span id="__span-24-2"><a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a><span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>
+</span><span id="__span-24-3"><a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a>  <span class="p">&lt;</span><span class="nt">app-star-rating</span> <span class="p">[</span><span class="na">rating</span><span class="p">]</span><span class="o">=</span><span class="s">&quot;product.rating&quot;</span>
+</span><span id="__span-24-4"><a id="__codelineno-24-4" name="__codelineno-24-4" href="#__codelineno-24-4"></a><span class="hll">                   <span class="p">(</span><span class="na">ratingChanged</span><span class="p">)</span><span class="o">=</span><span class="s">&quot;changeRating($event)&quot;</span><span class="p">/&gt;</span>
+</span></span><span id="__span-24-5"><a id="__codelineno-24-5" name="__codelineno-24-5" href="#__codelineno-24-5"></a><span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></code></pre></div>
+<div class="language-ts highlight"><span class="filename">product-item.ts</span><pre><span></span><code><span id="__span-25-1"><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a><span class="c1">//...</span>
+</span><span id="__span-25-2"><a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a><span class="k">export</span><span class="w"> </span><span class="kd">class</span><span class="w"> </span><span class="nx">ProductItem</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-25-3"><a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a><span class="w">  </span><span class="c1">//...</span>
+</span><span id="__span-25-4"><a id="__codelineno-25-4" name="__codelineno-25-4" href="#__codelineno-25-4"></a>
+</span><span id="__span-25-5"><a id="__codelineno-25-5" name="__codelineno-25-5" href="#__codelineno-25-5"></a><span class="hll"><span class="w">  </span><span class="nx">changeRating</span><span class="p">(</span><span class="nx">rating</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span></span><span id="__span-25-6"><a id="__codelineno-25-6" name="__codelineno-25-6" href="#__codelineno-25-6"></a><span class="hll"><span class="w">    </span><span class="k">this</span><span class="p">.</span><span class="nx">product</span><span class="p">.</span><span class="nx">rating</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">rating</span><span class="p">;</span>
+</span></span><span id="__span-25-7"><a id="__codelineno-25-7" name="__codelineno-25-7" href="#__codelineno-25-7"></a><span class="hll"><span class="w">  </span><span class="p">}</span>
+</span></span><span id="__span-25-8"><a id="__codelineno-25-8" name="__codelineno-25-8" href="#__codelineno-25-8"></a><span class="p">}</span>
+</span></code></pre></div>
+<h2 id="servicios-inyección-de-dependencias">Servicios. Inyección de dependencias</h2>
+<p>Un <strong>Servicio</strong> es una clase cuyo propósito es mantener una lógica (y datos) compartidos entre diferentes componentes de la aplicación. Esto es útil tanto para agrupar funcionalidad común de varios componentes, como para compartir datos entre componentes que no tengan relación de parentesco.</p>
+<p>También se recomienda su uso para acceder a datos externos (servicios web). Cuando un componente de Angular (o filtro, o directiva, u otro servicio, etc.) necesita usar un servicio, existe un componente interno llamado inyector de dependencias (común en muchos frameworks), que nos proveerá el objeto de dicho servicio. Sólo se creará como máximo una instancia de dicho servicio para la aplicación (<em>Singleton</em>).</p>
+<p><img alt="Inyector de dependencias" src="../img/ud6_3_service.png" /></p>
+<p>En la aplicación de ejemplo, se usa un Servicio para almacenar los productos, que en el futuro se obtendrá de un servicio web. Por ahora se creará en un directorio llamado <code>services/</code>:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-26-1"><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a>ng<span class="w"> </span>g<span class="w"> </span>service<span class="w"> </span>services/product-service
+</span></code></pre></div>
+<p>Esto creará un archivo <code>product.service.ts</code> con la clase del servicio. Esta clase está precedida con el decorador <code>@Injectable()</code>, que indica que la clase es un servicio y que puede ser inyectado en otros componentes.</p>
+<div class="language-ts highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">product.service.ts</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-27-1">1</a></span>
+<span class="normal"><a href="#__codelineno-27-2">2</a></span>
+<span class="normal"><a href="#__codelineno-27-3">3</a></span>
+<span class="normal"><a href="#__codelineno-27-4">4</a></span>
+<span class="normal"><a href="#__codelineno-27-5">5</a></span>
+<span class="normal"><a href="#__codelineno-27-6">6</a></span>
+<span class="normal"><a href="#__codelineno-27-7">7</a></span>
+<span class="normal"><a href="#__codelineno-27-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-27-1"><a id="__codelineno-27-1" name="__codelineno-27-1"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">Injectable</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;@angular/core&#39;</span><span class="p">;</span>
+</span><span id="__span-27-2"><a id="__codelineno-27-2" name="__codelineno-27-2"></a>
+</span><span id="__span-27-3"><a id="__codelineno-27-3" name="__codelineno-27-3"></a><span class="kd">@Injectable</span><span class="p">({</span>
+</span><span id="__span-27-4"><a id="__codelineno-27-4" name="__codelineno-27-4"></a><span class="w">  </span><span class="nx">providedIn</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;root&#39;</span>
+</span><span id="__span-27-5"><a id="__codelineno-27-5" name="__codelineno-27-5"></a><span class="p">})</span>
+</span><span id="__span-27-6"><a id="__codelineno-27-6" name="__codelineno-27-6"></a><span class="k">export</span><span class="w"> </span><span class="kd">class</span><span class="w"> </span><span class="nx">ProductService</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-27-7"><a id="__codelineno-27-7" name="__codelineno-27-7"></a>
+</span><span id="__span-27-8"><a id="__codelineno-27-8" name="__codelineno-27-8"></a><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div>
+<p>En la clase del servicio, se creará un método que devuelva el array de productos:</p>
+<div class="language-ts highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">product.service.ts</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-28-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-28-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-28-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-28-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-28-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-28-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-28-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-28-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-28-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-28-10">10</a></span>
+<span class="normal"><a href="#__codelineno-28-11">11</a></span>
+<span class="normal"><a href="#__codelineno-28-12">12</a></span>
+<span class="normal"><a href="#__codelineno-28-13">13</a></span>
+<span class="normal"><a href="#__codelineno-28-14">14</a></span>
+<span class="normal"><a href="#__codelineno-28-15">15</a></span>
+<span class="normal"><a href="#__codelineno-28-16">16</a></span>
+<span class="normal"><a href="#__codelineno-28-17">17</a></span>
+<span class="normal"><a href="#__codelineno-28-18">18</a></span>
+<span class="normal"><a href="#__codelineno-28-19">19</a></span>
+<span class="normal"><a href="#__codelineno-28-20">20</a></span>
+<span class="normal"><a href="#__codelineno-28-21">21</a></span>
+<span class="normal"><a href="#__codelineno-28-22">22</a></span>
+<span class="normal"><a href="#__codelineno-28-23">23</a></span>
+<span class="normal"><a href="#__codelineno-28-24">24</a></span>
+<span class="normal"><a href="#__codelineno-28-25">25</a></span>
+<span class="normal"><a href="#__codelineno-28-26">26</a></span>
+<span class="normal"><a href="#__codelineno-28-27">27</a></span>
+<span class="normal"><a href="#__codelineno-28-28">28</a></span>
+<span class="normal"><a href="#__codelineno-28-29">29</a></span>
+<span class="normal"><a href="#__codelineno-28-30">30</a></span>
+<span class="normal"><a href="#__codelineno-28-31">31</a></span>
+<span class="normal"><a href="#__codelineno-28-32">32</a></span>
+<span class="normal"><a href="#__codelineno-28-33">33</a></span>
+<span class="normal"><a href="#__codelineno-28-34">34</a></span>
+<span class="normal"><a href="#__codelineno-28-35">35</a></span>
+<span class="normal"><a href="#__codelineno-28-36">36</a></span>
+<span class="normal"><a href="#__codelineno-28-37">37</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-28-1"><a id="__codelineno-28-1" name="__codelineno-28-1"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">Injectable</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;@angular/core&#39;</span><span class="p">;</span>
+</span><span id="__span-28-2"><a id="__codelineno-28-2" name="__codelineno-28-2"></a><span class="hll"><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">Product</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;../interfaces/product&#39;</span><span class="p">;</span>
+</span></span><span id="__span-28-3"><a id="__codelineno-28-3" name="__codelineno-28-3"></a>
+</span><span id="__span-28-4"><a id="__codelineno-28-4" name="__codelineno-28-4"></a><span class="kd">@Injectable</span><span class="p">({</span>
+</span><span id="__span-28-5"><a id="__codelineno-28-5" name="__codelineno-28-5"></a><span class="w">  </span><span class="nx">providedIn</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;root&#39;</span>
+</span><span id="__span-28-6"><a id="__codelineno-28-6" name="__codelineno-28-6"></a><span class="p">})</span>
+</span><span id="__span-28-7"><a id="__codelineno-28-7" name="__codelineno-28-7"></a><span class="k">export</span><span class="w"> </span><span class="kd">class</span><span class="w"> </span><span class="nx">ProductService</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-28-8"><a id="__codelineno-28-8" name="__codelineno-28-8"></a>
+</span><span id="__span-28-9"><a id="__codelineno-28-9" name="__codelineno-28-9"></a><span class="hll"><span class="w">  </span><span class="nx">getProducts</span><span class="p">()</span><span class="o">:</span><span class="w"> </span><span class="nx">Product</span><span class="p">[]</span><span class="w"> </span><span class="p">{</span>
+</span></span><span id="__span-28-10"><a id="__codelineno-28-10" name="__codelineno-28-10"></a><span class="hll"><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">[</span>
+</span></span><span id="__span-28-11"><a id="__codelineno-28-11" name="__codelineno-28-11"></a><span class="hll"><span class="w">      </span><span class="p">{</span>
+</span></span><span id="__span-28-12"><a id="__codelineno-28-12" name="__codelineno-28-12"></a><span class="hll"><span class="w">        </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="kt">1</span><span class="p">,</span>
+</span></span><span id="__span-28-13"><a id="__codelineno-28-13" name="__codelineno-28-13"></a><span class="hll"><span class="w">        </span><span class="nx">description</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;SSD hard drive&#39;</span><span class="p">,</span>
+</span></span><span id="__span-28-14"><a id="__codelineno-28-14" name="__codelineno-28-14"></a><span class="hll"><span class="w">        </span><span class="nx">available</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;2024-10-03&#39;</span><span class="p">,</span>
+</span></span><span id="__span-28-15"><a id="__codelineno-28-15" name="__codelineno-28-15"></a><span class="hll"><span class="w">        </span><span class="nx">price</span><span class="o">:</span><span class="w"> </span><span class="kt">75</span><span class="p">,</span>
+</span></span><span id="__span-28-16"><a id="__codelineno-28-16" name="__codelineno-28-16"></a><span class="hll"><span class="w">        </span><span class="nx">imageUrl</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;assets/ssd.jpg&#39;</span><span class="p">,</span>
+</span></span><span id="__span-28-17"><a id="__codelineno-28-17" name="__codelineno-28-17"></a><span class="hll"><span class="w">        </span><span class="nx">rating</span><span class="o">:</span><span class="w"> </span><span class="kt">5</span>
+</span></span><span id="__span-28-18"><a id="__codelineno-28-18" name="__codelineno-28-18"></a><span class="hll"><span class="w">      </span><span class="p">},</span><span class="w"> </span><span class="p">{</span>
+</span></span><span id="__span-28-19"><a id="__codelineno-28-19" name="__codelineno-28-19"></a><span class="hll"><span class="w">        </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="kt">2</span><span class="p">,</span>
+</span></span><span id="__span-28-20"><a id="__codelineno-28-20" name="__codelineno-28-20"></a><span class="hll"><span class="w">        </span><span class="nx">description</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;LGA1151 Motherboard&#39;</span><span class="p">,</span>
+</span></span><span id="__span-28-21"><a id="__codelineno-28-21" name="__codelineno-28-21"></a><span class="hll"><span class="w">        </span><span class="nx">available</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;2024-09-15&#39;</span><span class="p">,</span>
+</span></span><span id="__span-28-22"><a id="__codelineno-28-22" name="__codelineno-28-22"></a><span class="hll"><span class="w">        </span><span class="nx">price</span><span class="o">:</span><span class="w"> </span><span class="kt">96.95</span><span class="p">,</span>
+</span></span><span id="__span-28-23"><a id="__codelineno-28-23" name="__codelineno-28-23"></a><span class="hll"><span class="w">        </span><span class="nx">imageUrl</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;assets/motherboard.png&#39;</span><span class="p">,</span>
+</span></span><span id="__span-28-24"><a id="__codelineno-28-24" name="__codelineno-28-24"></a><span class="hll"><span class="w">        </span><span class="nx">rating</span><span class="o">:</span><span class="w"> </span><span class="kt">4</span>
+</span></span><span id="__span-28-25"><a id="__codelineno-28-25" name="__codelineno-28-25"></a><span class="hll"><span class="w">      </span><span class="p">},</span>
+</span></span><span id="__span-28-26"><a id="__codelineno-28-26" name="__codelineno-28-26"></a><span class="hll"><span class="w">      </span><span class="p">{</span>
+</span></span><span id="__span-28-27"><a id="__codelineno-28-27" name="__codelineno-28-27"></a><span class="hll"><span class="w">        </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="kt">3</span><span class="p">,</span>
+</span></span><span id="__span-28-28"><a id="__codelineno-28-28" name="__codelineno-28-28"></a><span class="hll"><span class="w">        </span><span class="nx">description</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Kingston DDR4 3200 MHz 16GB 2x8GB CL16&#39;</span><span class="p">,</span>
+</span></span><span id="__span-28-29"><a id="__codelineno-28-29" name="__codelineno-28-29"></a><span class="hll"><span class="w">        </span><span class="nx">available</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;2024-11-10&#39;</span><span class="p">,</span>
+</span></span><span id="__span-28-30"><a id="__codelineno-28-30" name="__codelineno-28-30"></a><span class="hll"><span class="w">        </span><span class="nx">price</span><span class="o">:</span><span class="w"> </span><span class="kt">42.95</span><span class="p">,</span>
+</span></span><span id="__span-28-31"><a id="__codelineno-28-31" name="__codelineno-28-31"></a><span class="hll"><span class="w">        </span><span class="nx">imageUrl</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;assets/ssd.jpg&#39;</span><span class="p">,</span>
+</span></span><span id="__span-28-32"><a id="__codelineno-28-32" name="__codelineno-28-32"></a><span class="hll"><span class="w">        </span><span class="nx">rating</span><span class="o">:</span><span class="w"> </span><span class="kt">4</span>
+</span></span><span id="__span-28-33"><a id="__codelineno-28-33" name="__codelineno-28-33"></a><span class="hll"><span class="w">      </span><span class="p">}</span>
+</span></span><span id="__span-28-34"><a id="__codelineno-28-34" name="__codelineno-28-34"></a><span class="hll"><span class="w">    </span><span class="p">];</span>
+</span></span><span id="__span-28-35"><a id="__codelineno-28-35" name="__codelineno-28-35"></a><span class="hll"><span class="w">  </span><span class="p">}</span>
+</span></span><span id="__span-28-36"><a id="__codelineno-28-36" name="__codelineno-28-36"></a>
+</span><span id="__span-28-37"><a id="__codelineno-28-37" name="__codelineno-28-37"></a><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div>
+<p>Ahora que los productos están en el servicio, se debe hacer que el componente <code>products-list</code> los obtenga de ahí. Para “inyectar” el servicio en el componente, <em>Angular</em> utiliza una característica de <em>TypeScript</em>. Si se declaras en el constructor un parámetro con el modificador <code>public</code> o <code>private</code> en el constructor, <em>TypeScript</em> declara un atributo en la clase con el mismo nombre y hace una asignación del parámetro automática.</p>
+<p>Indicando el tipo de parámetro <code>ProductService</code>, al ser una clase de tipo servicio (<code>@Injectable</code>), <em>Angular</em> pasa automáticamente un objeto de dicha clase (creándolo si es la primera vez que se utiliza) al constructor. Esto es la inyección de dependencias.</p>
+<p>Finalmente, en el método <code>ngOnInit</code>, se llama al método del servicio que devuelve los productos. Como ya es necesario, se borra el contenido del array de productos y se inicializa como array vacío (en lugar de no darle valor), ya que si no, podría fallar el <code>@for</code> (el atributo estaría <em><code>undefined</code></em>) mientras se obtienen los datos. Esto es porque en un entorno real, el servidor tendrá un retardo en devolver los datos, y si <em>Angular</em> intenta recorrer los productos antes de eso a partir de un array sin valor (undefined), aparecería un error.</p>
+<div class="language-ts highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">products-list.ts</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-29-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-29-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-29-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-29-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-29-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-29-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-29-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-29-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-29-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-29-10">10</a></span>
+<span class="normal"><a href="#__codelineno-29-11">11</a></span>
+<span class="normal"><a href="#__codelineno-29-12">12</a></span>
+<span class="normal"><a href="#__codelineno-29-13">13</a></span>
+<span class="normal"><a href="#__codelineno-29-14">14</a></span>
+<span class="normal"><a href="#__codelineno-29-15">15</a></span>
+<span class="normal"><a href="#__codelineno-29-16">16</a></span>
+<span class="normal"><a href="#__codelineno-29-17">17</a></span>
+<span class="normal"><a href="#__codelineno-29-18">18</a></span>
+<span class="normal"><a href="#__codelineno-29-19">19</a></span>
+<span class="normal"><a href="#__codelineno-29-20">20</a></span>
+<span class="normal"><a href="#__codelineno-29-21">21</a></span>
+<span class="normal"><a href="#__codelineno-29-22">22</a></span>
+<span class="normal"><a href="#__codelineno-29-23">23</a></span>
+<span class="normal"><a href="#__codelineno-29-24">24</a></span>
+<span class="normal"><a href="#__codelineno-29-25">25</a></span>
+<span class="normal"><a href="#__codelineno-29-26">26</a></span>
+<span class="normal"><a href="#__codelineno-29-27">27</a></span>
+<span class="normal"><a href="#__codelineno-29-28">28</a></span>
+<span class="normal"><a href="#__codelineno-29-29">29</a></span>
+<span class="normal"><a href="#__codelineno-29-30">30</a></span>
+<span class="normal"><a href="#__codelineno-29-31">31</a></span>
+<span class="normal"><a href="#__codelineno-29-32">32</a></span>
+<span class="normal"><a href="#__codelineno-29-33">33</a></span>
+<span class="normal"><a href="#__codelineno-29-34">34</a></span>
+<span class="normal"><a href="#__codelineno-29-35">35</a></span>
+<span class="normal"><a href="#__codelineno-29-36">36</a></span>
+<span class="normal"><a href="#__codelineno-29-37">37</a></span>
+<span class="normal"><a href="#__codelineno-29-38">38</a></span>
+<span class="normal"><a href="#__codelineno-29-39">39</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-29-1"><a id="__codelineno-29-1" name="__codelineno-29-1"></a><span class="hll"><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">Component</span><span class="p">,</span><span class="w"> </span><span class="nx">OnInit</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;@angular/core&#39;</span><span class="p">;</span>
+</span></span><span id="__span-29-2"><a id="__codelineno-29-2" name="__codelineno-29-2"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">FormsModule</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;@angular/forms&#39;</span><span class="p">;</span>
+</span><span id="__span-29-3"><a id="__codelineno-29-3" name="__codelineno-29-3"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">CommonModule</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;@angular/common&#39;</span><span class="p">;</span>
+</span><span id="__span-29-4"><a id="__codelineno-29-4" name="__codelineno-29-4"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">Product</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;../interfaces/product&#39;</span><span class="p">;</span>
+</span><span id="__span-29-5"><a id="__codelineno-29-5" name="__codelineno-29-5"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">ProductFilterPipe</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;../pipes/product-filter.pipe&#39;</span><span class="p">;</span>
+</span><span id="__span-29-6"><a id="__codelineno-29-6" name="__codelineno-29-6"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">ProductItem</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;../product-item/product-item&#39;</span><span class="p">;</span>
+</span><span id="__span-29-7"><a id="__codelineno-29-7" name="__codelineno-29-7"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">ProductService</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;../services/product.service&#39;</span><span class="p">;</span>
+</span><span id="__span-29-8"><a id="__codelineno-29-8" name="__codelineno-29-8"></a>
+</span><span id="__span-29-9"><a id="__codelineno-29-9" name="__codelineno-29-9"></a><span class="kd">@Component</span><span class="p">({</span>
+</span><span id="__span-29-10"><a id="__codelineno-29-10" name="__codelineno-29-10"></a><span class="w">  </span><span class="nx">selector</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;app-products-list&#39;</span><span class="p">,</span>
+</span><span id="__span-29-11"><a id="__codelineno-29-11" name="__codelineno-29-11"></a><span class="w">  </span><span class="nx">standalone</span><span class="o">:</span><span class="w"> </span><span class="kt">true</span><span class="p">,</span>
+</span><span id="__span-29-12"><a id="__codelineno-29-12" name="__codelineno-29-12"></a><span class="w">  </span><span class="nx">imports</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+</span><span id="__span-29-13"><a id="__codelineno-29-13" name="__codelineno-29-13"></a><span class="w">    </span><span class="nx">CommonModule</span><span class="p">,</span>
+</span><span id="__span-29-14"><a id="__codelineno-29-14" name="__codelineno-29-14"></a><span class="w">    </span><span class="nx">FormsModule</span><span class="p">,</span>
+</span><span id="__span-29-15"><a id="__codelineno-29-15" name="__codelineno-29-15"></a><span class="w">    </span><span class="nx">ProductFilterPipe</span><span class="p">,</span>
+</span><span id="__span-29-16"><a id="__codelineno-29-16" name="__codelineno-29-16"></a><span class="w">    </span><span class="nx">ProductItemComponent</span>
+</span><span id="__span-29-17"><a id="__codelineno-29-17" name="__codelineno-29-17"></a><span class="w">  </span><span class="p">],</span>
+</span><span id="__span-29-18"><a id="__codelineno-29-18" name="__codelineno-29-18"></a><span class="w">  </span><span class="nx">templateUrl</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;./products-list.html&#39;</span><span class="p">,</span>
+</span><span id="__span-29-19"><a id="__codelineno-29-19" name="__codelineno-29-19"></a><span class="w">  </span><span class="nx">styleUrl</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;./products-list.css&#39;</span>
+</span><span id="__span-29-20"><a id="__codelineno-29-20" name="__codelineno-29-20"></a><span class="p">})</span>
+</span><span id="__span-29-21"><a id="__codelineno-29-21" name="__codelineno-29-21"></a><span class="k">export</span><span class="w"> </span><span class="kd">class</span><span class="w"> </span><span class="nx">ProductsList</span><span class="w"> </span><span class="p">{</span><span class="nx">s</span>
+</span><span id="__span-29-22"><a id="__codelineno-29-22" name="__codelineno-29-22"></a><span class="w">  </span><span class="nx">title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Lista de productos&#39;</span><span class="p">;</span>
+</span><span id="__span-29-23"><a id="__codelineno-29-23" name="__codelineno-29-23"></a><span class="w">  </span><span class="nx">headers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">description</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Producto&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">price</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Precio&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">available</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Disponible&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">image</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Imagen&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">rating</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Valoración&#39;</span><span class="w"> </span><span class="p">};</span>
+</span><span id="__span-29-24"><a id="__codelineno-29-24" name="__codelineno-29-24"></a><span class="w">  </span><span class="nx">showImage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">;</span>
+</span><span id="__span-29-25"><a id="__codelineno-29-25" name="__codelineno-29-25"></a>
+</span><span id="__span-29-26"><a id="__codelineno-29-26" name="__codelineno-29-26"></a><span class="w">  </span><span class="nx">filterSearch</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;&#39;</span><span class="p">;</span>
+</span><span id="__span-29-27"><a id="__codelineno-29-27" name="__codelineno-29-27"></a>
+</span><span id="__span-29-28"><a id="__codelineno-29-28" name="__codelineno-29-28"></a><span class="hll"><span class="w">  </span><span class="nx">products</span><span class="o">:</span><span class="w"> </span><span class="kt">Product</span><span class="p">[]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[];</span>
+</span></span><span id="__span-29-29"><a id="__codelineno-29-29" name="__codelineno-29-29"></a>
+</span><span id="__span-29-30"><a id="__codelineno-29-30" name="__codelineno-29-30"></a><span class="hll"><span class="w">  </span><span class="k">private</span><span class="w"> </span><span class="nx">productService</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">inject</span><span class="p">(</span><span class="nx">ProductService</span><span class="p">);</span>
+</span></span><span id="__span-29-31"><a id="__codelineno-29-31" name="__codelineno-29-31"></a>
+</span><span id="__span-29-32"><a id="__codelineno-29-32" name="__codelineno-29-32"></a><span class="hll"><span class="w">  </span><span class="nx">ngOnInit</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span></span><span id="__span-29-33"><a id="__codelineno-29-33" name="__codelineno-29-33"></a><span class="hll"><span class="w">    </span><span class="k">this</span><span class="p">.</span><span class="nx">products</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">productService</span><span class="p">.</span><span class="nx">getProducts</span><span class="p">();</span>
+</span></span><span id="__span-29-34"><a id="__codelineno-29-34" name="__codelineno-29-34"></a><span class="hll"><span class="w">  </span><span class="p">}</span>
+</span></span><span id="__span-29-35"><a id="__codelineno-29-35" name="__codelineno-29-35"></a>
+</span><span id="__span-29-36"><a id="__codelineno-29-36" name="__codelineno-29-36"></a><span class="w">  </span><span class="nx">toggleImage</span><span class="p">()</span><span class="o">:</span><span class="w"> </span><span class="ow">void</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-29-37"><a id="__codelineno-29-37" name="__codelineno-29-37"></a><span class="w">    </span><span class="k">this</span><span class="p">.</span><span class="nx">showImage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">!</span><span class="k">this</span><span class="p">.</span><span class="nx">showImage</span><span class="p">;</span>
+</span><span id="__span-29-38"><a id="__codelineno-29-38" name="__codelineno-29-38"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-29-39"><a id="__codelineno-29-39" name="__codelineno-29-39"></a><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "content.code.copy"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+    
+  </body>
+</html>

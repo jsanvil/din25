@@ -8,28 +8,28 @@
       
       
       
-        <link rel="canonical" href="https://jsanvil.github.io/din25/ud01_intro/041_actividad/">
+        <link rel="canonical" href="https://jsanvil.github.io/din25/ud03_components/">
       
       
-        <link rel="prev" href="../021_actividad/">
+        <link rel="prev" href="../ud02_framework/062_actividad/">
       
       
-        <link rel="next" href="../051_actividad/">
+        <link rel="next" href="07_components/">
       
       
-      <link rel="icon" href="../../assets/favicon.png">
+      <link rel="icon" href="../assets/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.17">
     
     
       
-        <title>1.4.1 ✍️ Actividad: Proyecto base Angular + Electron - DIN 2025</title>
+        <title>UD2: Componentes en Angular - DIN 2025</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.7e37652d.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -48,9 +48,9 @@
       
     
     
-      <link rel="stylesheet" href="../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#141--actividad-proyecto-base-angular--electron" class="md-skip">
+        <a href="#ud2-componentes-en-angular" class="md-skip">
           Skip to content
         </a>
       
@@ -90,7 +90,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="DIN 2025" class="md-header__button md-logo" aria-label="DIN 2025" data-md-component="logo">
+    <a href=".." title="DIN 2025" class="md-header__button md-logo" aria-label="DIN 2025" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 14c1.33 0 4 .67 4 2v1h-8v-1c0-1.33 2.67-2 4-2m0-1c1.11 0 2-.89 2-2s-.89-2-2-2a2 2 0 1 0 0 4m7-5v10c0 1.11-.89 2-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h6l2 2h8a2 2 0 0 1 2 2m-2 0H4v10h16z"/></svg>
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              1.4.1 ✍️ Actividad: Proyecto base Angular + Electron
+              UD2: Componentes en Angular
             
           </span>
         </div>
@@ -211,11 +211,51 @@
     
     
       <li class="md-tabs__item">
-        <a href="../.." class="md-tabs__link">
+        <a href=".." class="md-tabs__link">
           
   
   
   Inicio
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../ud01_intro/" class="md-tabs__link">
+          
+  
+  
+  UD1 Intro
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../ud02_framework/" class="md-tabs__link">
+          
+  
+  
+  UD2 Framework
 
         </a>
       </li>
@@ -233,11 +273,11 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../" class="md-tabs__link">
+        <a href="./" class="md-tabs__link">
           
   
   
-  UD1 Intro
+  UD3 Componentes
 
         </a>
       </li>
@@ -267,7 +307,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="DIN 2025" class="md-nav__button md-logo" aria-label="DIN 2025" data-md-component="logo">
+    <a href=".." title="DIN 2025" class="md-nav__button md-logo" aria-label="DIN 2025" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 14c1.33 0 4 .67 4 2v1h-8v-1c0-1.33 2.67-2 4-2m0-1c1.11 0 2-.89 2-2s-.89-2-2-2a2 2 0 1 0 0 4m7-5v10c0 1.11-.89 2-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h6l2 2h8a2 2 0 0 1 2 2m-2 0H4v10h16z"/></svg>
@@ -326,7 +366,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href=".." class="md-nav__link">
         
   
   
@@ -349,7 +389,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../entorno/" class="md-nav__link">
+      <a href="../entorno/" class="md-nav__link">
         
   
   
@@ -372,7 +412,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../RRAA_CCEE/" class="md-nav__link">
+      <a href="../RRAA_CCEE/" class="md-nav__link">
         
   
   
@@ -383,6 +423,427 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    UD1 Intro
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            UD1 Intro
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ud01_intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    UD1: Introducción
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ud01_intro/01_electron_intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    1.1 Introducción a Electron
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ud01_intro/02_electron_firstapp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    1.2 Creando la primera aplicación en Electron
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ud01_intro/021_actividad/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    1.2.1 ✍️ Actividad: Preparar el entorno y crear la primera aplicación en Electron
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ud01_intro/03_gui/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    1.3 Interfaz gráfica de usuario (GUI)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    UD2 Framework
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            UD2 Framework
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ud02_framework/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    UD2: Framework Angular
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ud02_framework/04_angular_electron/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.1 Trabajar con Angular y Electron
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ud02_framework/05_angular_intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.2 Introducción a Angular
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ud02_framework/06_angular_databinding/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.3 Data binding y pipes en Angular
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    📚 Proyecto Angular Events
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            📚 Proyecto Angular Events
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ud02_framework/051_actividad/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.2.1 ✍️ Proyecto: Angular Events. Parte 1.
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ud02_framework/061_actividad/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.3.1 ✍️ Proyecto: Angular Events. Parte 2.
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ud02_framework/062_actividad/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.3.2 ✍️ Proyecto: Angular Events. Parte 3.
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -418,15 +879,15 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
             
   
   
   <span class="md-ellipsis">
-    UD1 Intro
+    UD3 Componentes
     
   </span>
   
@@ -434,239 +895,12 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
-            UD1 Intro
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    UD1: Introducción
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../01_electron_intro/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    1.1 Introducción a Electron
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../02_electron_firstapp/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    1.2 Creando la primera aplicación en Electron
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../03_gui/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    1.3 Interfaz gráfica de usuario (GUI)
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../04_angular_electron/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    1.4 Trabajar con Angular y Electron
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../05_angular_intro/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    1.5 Introducción a Angular
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../06_angular_databinding/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    1.6 Data binding y pipes en Angular
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    
-    
-    
-    
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_8" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_2_8" id="__nav_2_8_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    ✍️ Actividades
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_8_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2_8">
-            <span class="md-nav__icon md-icon"></span>
-            ✍️ Actividades
+            UD3 Componentes
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../021_actividad/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    1.2.1 ✍️ Actividad: Preparar el entorno y crear la primera aplicación en Electron
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
             
               
                 
@@ -689,7 +923,7 @@
   
   
   <span class="md-ellipsis">
-    1.4.1 ✍️ Actividad: Proyecto base Angular + Electron
+    UD2: Componentes en Angular
     
   </span>
   
@@ -701,9 +935,24 @@
 
               
             
-          </ul>
-        </nav>
-      
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="07_components/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    3.1 Componentes y Servicios en Angular
+    
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -727,10 +976,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_9" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" >
         
           
-          <label class="md-nav__link" for="__nav_2_9" id="__nav_2_9_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
             
   
   
@@ -743,8 +992,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_9_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_9">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
             <span class="md-nav__icon md-icon"></span>
             📚 Proyecto Angular Events
           </label>
@@ -757,58 +1006,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../051_actividad/" class="md-nav__link">
+      <a href="071_actividad/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    1.5.1 ✍️ Proyecto: Angular Events. Parte 1.
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../061_actividad/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    1.6.1 ✍️ Proyecto: Angular Events. Parte 2.
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../062_actividad/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    1.6.2 ✍️ Proyecto: Angular Events. Parte 3.
+    3.1.1 ✍️ Proyecto: Angular Events. Parte 4.
     
   </span>
   
@@ -868,39 +1071,13 @@
 
 
 
-<h1 id="141--actividad-proyecto-base-angular--electron">1.4.1 ✍️ Actividad: Proyecto base Angular + Electron</h1>
-<p>Para realizar la actividad se debe seguir los siguientes pasos:</p>
-<ol>
-<li>
-<p>Acepta la <em>invitación a la actividad</em> en GitHub Classroom: <a href="https://classroom.github.com/a/iPZCjSpm">https://classroom.github.com/a/iPZCjSpm</a></p>
+<h1 id="ud2-componentes-en-angular">UD2: Componentes en Angular</h1>
 <ul>
-<li>Selecciona tu usuario del listado.</li>
-<li>Acepta la actividad.</li>
+<li><a href="07_components/">3.1 - Componentes y Servicios en Angular</a><ul>
+<li><a href="071_actividad/">3.1.1 ✍️ Proyecto: Angular Events. Parte 4.</a></li>
 </ul>
 </li>
-<li>
-<p>Clona el repositorio en tu máquina local</p>
-<p>Puedes utilizar <em>VS Code</em> para clonar el repositorio o la terminal con el comando:</p>
-<div class="language-bash highlight"><span class="filename">Clonar el repositorio</span><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>git<span class="w"> </span>clone<span class="w"> </span>&lt;url-repositorio&gt;
-</span></code></pre></div>
-</li>
-<li>
-<p>Sigue los pasos del punto <a href="../04_angular_electron/">1.4 Trabajar con Angular y Electron</a></p>
-</li>
-<li>
-<p>Prueba la aplicación tanto en desarrollo como generando el paquete ejecutable.</p>
-<div class="admonition warning title">
-<p class="admonition-title">Entrega en Aules</p>
-<p>Además de la entrega del código en el repositorio, deberás entregar el empaquetado de la aplicación en formato <code>.zip</code> en la plataforma Aules.</p>
-</div>
-</li>
-<li>
-<p>Realiza un <em>commit</em> con los cambios realizados y sube el código al repositorio remoto.</p>
-</li>
-<li>
-<p>Comprueba que los cambios se han subido correctamente al repositorio remoto.</p>
-</li>
-</ol>
+</ul>
 
 
 
@@ -949,10 +1126,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "content.code.copy"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "content.code.copy"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      <script src="../assets/javascripts/bundle.92b07e13.min.js"></script>
       
     
   </body>
