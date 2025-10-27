@@ -8,8 +8,10 @@
       
       
       
-        <link rel="canonical" href="https://jsanvil.github.io/din25/ud04_usability/__041_actividad/">
+        <link rel="canonical" href="https://jsanvil.github.io/din25/ud04_usability/041_actividad/">
       
+      
+        <link rel="prev" href="../04_rest/">
       
       
       
@@ -283,10 +285,12 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
+      <li class="md-tabs__item md-tabs__item--active">
         <a href="../" class="md-tabs__link">
           
   
@@ -1040,24 +1044,29 @@
       
   
   
+    
   
   
+  
     
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
             
   
   
@@ -1070,7 +1079,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             UD4 Usabilidad
@@ -1118,6 +1127,158 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5_3" id="__nav_5_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    📚 Proyecto Angular Events
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5_3">
+            <span class="md-nav__icon md-icon"></span>
+            📚 Proyecto Angular Events
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    3.1.1 ✍️ Proyecto: Angular Events. Parte 4.
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    3.1.1 ✍️ Proyecto: Angular Events. Parte 4.
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#crear-el-servicio-local-con-json-server" class="md-nav__link">
+    <span class="md-ellipsis">
+      Crear el servicio local con json-server
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#obtener-eventos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Obtener eventos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#añadir-evento" class="md-nav__link">
+    <span class="md-ellipsis">
+      Añadir evento
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#borrar-evento" class="md-nav__link">
+    <span class="md-ellipsis">
+      Borrar evento
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -1192,15 +1353,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#interceptor" class="md-nav__link">
-    <span class="md-ellipsis">
-      Interceptor
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -1239,7 +1391,7 @@
 <p>Para simular el servicio web, vamos a utilizar <code>json-server</code>. Este es un paquete de <code>node.js</code> que nos permite crear un servidor web que sirve datos en formato <code>JSON</code> a partir de un archivo <code>JSON</code> que le pasemos.</p>
 <p>Para instalarlo, crea una nueva carpeta en el directorio raíz del proyecto llamada <code>server/</code> y dentro de ella ejecuta:</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>npm<span class="w"> </span>init<span class="w"> </span>-y
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>json-server
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>npm<span class="w"> </span>install<span class="w"> </span>json-server
 </span></code></pre></div>
 <p>Crea un archivo <code>db.json</code> con el siguiente contenido:</p>
 <div class="language-json highlight"><span class="filename">server/db.json</span><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="p">{</span>
@@ -1248,7 +1400,7 @@
 </span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">      </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1&quot;</span><span class="p">,</span>
 </span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">      </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Evento 1&quot;</span><span class="p">,</span>
 </span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">      </span><span class="nt">&quot;image&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://picsum.photos/200/300&quot;</span><span class="p">,</span>
-</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">      </span><span class="nt">&quot;date&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-02-10&quot;</span><span class="p">,</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">      </span><span class="nt">&quot;date&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2025-02-10&quot;</span><span class="p">,</span>
 </span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">      </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Descripción del primer evento&quot;</span><span class="p">,</span>
 </span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">      </span><span class="nt">&quot;price&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">20.0</span>
 </span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">    </span><span class="p">},</span>
@@ -1256,7 +1408,7 @@
 </span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="w">      </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2&quot;</span><span class="p">,</span>
 </span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="w">      </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Evento 2&quot;</span><span class="p">,</span>
 </span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="w">      </span><span class="nt">&quot;image&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://picsum.photos/200/300&quot;</span><span class="p">,</span>
-</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="w">      </span><span class="nt">&quot;date&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-05-20&quot;</span><span class="p">,</span>
+</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="w">      </span><span class="nt">&quot;date&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2025-05-20&quot;</span><span class="p">,</span>
 </span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="w">      </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Descripción del segundo evento&quot;</span><span class="p">,</span>
 </span><span id="__span-2-17"><a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a><span class="w">      </span><span class="nt">&quot;price&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">40.0</span>
 </span><span id="__span-2-18"><a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a><span class="w">    </span><span class="p">}</span>
@@ -1269,38 +1421,40 @@
 <p>Si todo ha ido bien, deberías poder acceder a la URL <code>http://localhost:3000/eventos</code> y ver los eventos que hemos creado en el archivo <code>db.json</code>.</p>
 <div class="admonition note">
 <p class="admonition-title">Otras opciones de configuración</p>
-<p>Se puede cambiar el puerto por defecto (<code>3000</code>) con el parámetro <code>--port</code>, o también, simular un retardo en las respuestas con <code>--delay</code>.</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>npx<span class="w"> </span>json-server<span class="w"> </span>--watch<span class="w"> </span>db.json<span class="w"> </span>--port<span class="w"> </span><span class="m">3001</span><span class="w"> </span>--delay<span class="w"> </span><span class="m">500</span>
+<p>Se puede cambiar el puerto por defecto (<code>3000</code>) con el parámetro <code>--port</code>.</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>npx<span class="w"> </span>json-server<span class="w"> </span>--watch<span class="w"> </span>db.json<span class="w"> </span>--port<span class="w"> </span><span class="m">3001</span>
 </span></code></pre></div>
 </div>
 <h2 id="obtener-eventos">Obtener eventos</h2>
 <p>Los eventos se obtienen llamando al servicio <code>/eventos</code> por <code>GET</code>. Este servicio te devuelve un objeto JSON con un <code>Array</code> de eventos.</p>
 <p>El método getEventos del servicio, ya no devolverá directamente <code>Evento[]</code>, sino un <code>Observable&lt;Evento[]&gt;</code>:</p>
 <div class="language-typescript highlight"><span class="filename">src/app/services/eventos.service.ts</span><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nx">getEventos</span><span class="p">()</span><span class="o">:</span><span class="w"> </span><span class="nx">Observable</span><span class="o">&lt;</span><span class="nx">Evento</span><span class="p">[]</span><span class="o">&gt;</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">  </span><span class="p">...</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">  </span><span class="c1">//...</span>
 </span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="p">}</span>
 </span></code></pre></div>
 <p>En el método <code>ngOnInit</code> del componente <code>eventos-show</code>, suscríbete al servicio para obtener el array de eventos. Inicializa la colección de eventos previamente a un array vacío para que no dé problemas la directiva <code>@for</code>.</p>
 <h2 id="añadir-evento">Añadir evento</h2>
-<p>Añadimos un evento llamado al servicio <code>/eventos</code> usando <code>POST</code>. Como datos enviamos el objeto <code>Evento</code> con los datos del evento (el objeto que generamos con el formulario). Este servicio nos devolverá un JSON con el evento añadido y el <code>id</code> que le ha asignado.</p>
+<p>Añadimos un evento llamado al servicio <code>/eventos</code> mediante <code>POST</code>. Como datos enviamos el objeto <code>Evento</code> con los datos del evento (el objeto que generamos con el formulario). Este servicio nos devolverá un JSON con el evento añadido y el <code>id</code> que le ha asignado.</p>
 <p>Crea el método <code>addEvento</code> en el servicio <code>EventosService</code>:</p>
 <div class="language-typescript highlight"><span class="filename">src/app/services/eventos.service.ts</span><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="nx">addEvento</span><span class="p">(</span><span class="nx">evento</span><span class="o">:</span><span class="w"> </span><span class="kt">Evento</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="nx">Observable</span><span class="o">&lt;</span><span class="nx">Evento</span><span class="o">&gt;</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">  </span><span class="p">...</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">  </span><span class="c1">//...</span>
 </span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="p">}</span>
 </span></code></pre></div>
 <p>El método de añadir evento del componente <code>evento-add</code>, debe llamar a este método del servicio y suscribirse. Y cuando este nos devuelva el evento insertado, es cuando debemos usar el <code>EventEmitter</code> para informar a <code>eventos-show</code> (el componente padre) que debe de añadirlo y reiniciar el objeto del formulario (<strong>importante</strong>: debemos emitir el evento que nos devuelve el servidor y no el del formulario, ya que entre otras cosas, tendrá un <code>id</code> válido).</p>
 <h2 id="borrar-evento">Borrar evento</h2>
-<p>Para borrar un evento llamaremos al servicio <code>/eventos/:idEvento</code> usando el método <code>DELETE</code> (ej: <code>/eventos/jk3r</code>).</p>
+<p>Para borrar un evento llamaremos al servicio <code>/eventos/:idEvento</code> usando el método <code>DELETE</code> (ej: <code>/eventos/y5d</code>).</p>
 <p>El método a crear en el servicio <code>EventosService</code> devolverá el observable con la respuesta, es decir, la llamada al servidor sin procesar nada.</p>
 <div class="language-typescript highlight"><span class="filename">src/app/services/eventos.service.ts</span><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="nx">deleteEvento</span><span class="p">(</span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="nx">Observable</span><span class="o">&lt;</span><span class="nx">any</span><span class="o">&gt;</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="w">  </span><span class="p">...</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="w">  </span><span class="c1">//...</span>
 </span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="p">}</span>
 </span></code></pre></div>
 <p>El método de borrar evento en <code>evento-item</code>, llamará a este servicio y se suscribirá. Al recibir la respuesta emitirá mediante el <code>EventEmitter</code> correspondiente al componente padre, <code>eventos-show</code> para indicar que lo borre del array de eventos.</p>
-<p><strong>Importante</strong>: A la hora de llamar al método del servicio, <em>TypeScript</em> te marcará como error la <code>id</code> del producto, ya que esta es opcional en la interfaz <code>Evento</code>, por lo que podría ser <code>undefined</code> en lugar de <code>string</code> (los proyectos <em>Angular</em> se crean con <em>TypeScript</em> en modo estricto). Para indicar a <em>TypeScript</em> que ignore esta posibilidad (siempre tendrá valor), ponemos el símbolo <code>!</code> detrás <code>this.producto.id!</code>.</p>
-<h2 id="interceptor">Interceptor</h2>
-<p>Se creará un interceptor llamado <code>base-url</code> que, al igual que en lo apuntes (ejemplo de productos), se encargue de concatenar la <em>url base</em> del servidor a todas las llamadas HTTP que realicemos. Por ejemplo <code>http://localhost:3000</code></p>
-<p>Se recomienda (al igual que en el ejemplo) guardar el valor de dicha url dentro de los archivos de la carpeta <code>environments/</code>. Tanto en el desarrollo (<code>environment.ts</code>) como en el de producción (<code>environment.prod.ts</code>). El valor se guarda dentro del objeto <code>environment</code> como una propiedad adicional.</p>
+<p><strong>Importante</strong>: A la hora de llamar al método del servicio, <em>TypeScript</em> te marcará como error la <code>id</code> del producto, ya que esta es opcional en la interfaz <code>Evento</code>, por lo que podría ser <code>undefined</code> en lugar de <code>number</code> (los proyectos <em>Angular</em> se crean con <em>TypeScript</em> en modo estricto). Para indicar a <em>TypeScript</em> que ignore esta posibilidad (siempre tendrá valor), ponemos el símbolo <code>!</code> detrás <code>this.producto.id!</code>.</p>
+<!-- ## Interceptor
+
+Se creará un interceptor llamado `base-url` que, al igual que en lo apuntes (ejemplo de productos), se encargue de concatenar la _url base_ del servidor a todas las llamadas HTTP que realicemos. Por ejemplo `http://localhost:3000`
+
+Se recomienda (al igual que en el ejemplo) guardar el valor de dicha url dentro de los archivos de la carpeta `environments/`. Tanto en el desarrollo (`environment.ts`) como en el de producción (`environment.prod.ts`). El valor se guarda dentro del objeto `environment` como una propiedad adicional. -->
 
 
 
