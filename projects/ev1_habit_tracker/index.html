@@ -1976,10 +1976,16 @@
 <li>La edición debe permitir <strong>cancelar</strong> y, si hay cambios, <strong>pedir confirmación al usuario</strong>.</li>
 </ul>
 </li>
-<li><strong>Eliminar:</strong> Debe pedir <strong>confirmación al usuario</strong> antes de eliminar un elemento.</li>
+<li><strong>Eliminar:</strong> Debe pedir <strong>confirmación al usuario</strong> antes de eliminar un elemento (hábito o progreso)</li>
 <li><strong>Cambiar Estado/Registrar:</strong> Debe haber un mecanismo simple para registrar el progreso diario o cambiar el estado del hábito.</li>
-<li><strong>Detalles:</strong> Al seleccionar un hábito, se debe desplegar una vista detallada con toda la información, incluyendo el historial de progreso.</li>
-<li><strong>Sin Datos:</strong> Si no hay hábitos registrados, se debe mostrar un mensaje adecuado e instrucciones para añadir el primer hábito.</li>
+<li><strong>Detalles:</strong> Al seleccionar un hábito, se debe desplegar una vista detallada con toda la información, incluyendo el historial de progreso.<ul>
+<li>Incluir Botones para "Editar" y "Borrar" el hábito.</li>
+<li>Debe mostrar un formulario para agregar un nuevo progreso.</li>
+<li>El historial de progresos debe mostrarse siempre ordenado, los más recientes primero.</li>
+<li>Cada elemento de progreso incluirá un botón que permita borrarlo.</li>
+</ul>
+</li>
+<li><strong>Sin Datos:</strong> Si no hay hábitos registrados, o no hay progresos dentro de un hábito, se debe mostrar un mensaje adecuado e instrucciones para añadir el primer hábito.</li>
 </ol>
 <h3 id="b-filtrado-y-ordenación">B. Filtrado y Ordenación</h3>
 <ol>
@@ -1993,8 +1999,9 @@
 <h3 id="c-persistencia-api-rest-simulada">C. Persistencia (API REST Simulada)</h3>
 <p>El almacenamiento se realiza mediante <code>json-server</code> (simulando una conexión asíncrona a la base de datos):</p>
 <ol>
+<li><strong>Servicio:</strong> Se deberá implementar un servicio de <em>Angular</em> para centralizar las llamadas al almacenamiento de datos.</li>
 <li><strong>Operaciones Asíncronas:</strong> Las operaciones de persistencia (C/R/U/D) deben realizarse en <strong>segundo plano</strong>, <strong>sin bloquear la interfaz</strong>.</li>
-<li><strong>Feedback:</strong> Se debe <strong>mostrar un mensaje de éxito o error</strong> después de cada operación de persistencia (guardar/cargar).</li>
+<li><strong>Feedback:</strong> Se debe <strong>mostrar un mensaje de éxito o error</strong> después de cada operación de persistencia (leer, crear, modificar y borrar).</li>
 <li><strong>Llamadas HTTP:</strong> La aplicación Angular debe utilizar <code>HttpClient</code> para realizar peticiones (GET, POST, PUT/PATCH, DELETE) para gestionar los datos.</li>
 </ol>
 <h3 id="d-mockup-de-ejemplo">D. Mockup de ejemplo</h3>
