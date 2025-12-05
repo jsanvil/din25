@@ -8,9 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://jsanvil.github.io/din25/ud02_framework/041_actividad/">
+        <link rel="canonical" href="https://jsanvil.github.io/din25/ud05_state/052_routing/">
       
       
+        <link rel="prev" href="../051_intro/">
+      
+      
+        <link rel="next" href="../053_signals/">
       
       
       <link rel="icon" href="../../assets/favicon.png">
@@ -18,7 +22,7 @@
     
     
       
-        <title>2.1.1 ✍️ Actividad: Proyecto base Angular + Electron - DIN 2025</title>
+        <title>5.2 Navegación y Routing en Angular - DIN 2025</title>
       
     
     
@@ -72,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#211--actividad-proyecto-base-angular--electron" class="md-skip">
+        <a href="#52-navegación-y-routing-en-angular" class="md-skip">
           Skip to content
         </a>
       
@@ -106,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              2.1.1 ✍️ Actividad: Proyecto base Angular + Electron
+              5.2 Navegación y Routing en Angular
             
           </span>
         </div>
@@ -267,7 +271,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../" class="md-tabs__link">
+        <a href="../../ud02_framework/" class="md-tabs__link">
           
   
   
@@ -323,11 +327,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../ud05_state/051_intro/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../051_intro/" class="md-tabs__link">
           
   
   
@@ -794,7 +800,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../" class="md-nav__link">
+      <a href="../../ud02_framework/" class="md-nav__link">
         
   
   
@@ -817,7 +823,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../04_angular_electron/" class="md-nav__link">
+      <a href="../../ud02_framework/04_angular_electron/" class="md-nav__link">
         
   
   
@@ -840,7 +846,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../05_angular_intro/" class="md-nav__link">
+      <a href="../../ud02_framework/05_angular_intro/" class="md-nav__link">
         
   
   
@@ -863,7 +869,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../06_angular_databinding/" class="md-nav__link">
+      <a href="../../ud02_framework/06_angular_databinding/" class="md-nav__link">
         
   
   
@@ -927,7 +933,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../051_actividad/" class="md-nav__link">
+      <a href="../../ud02_framework/051_actividad/" class="md-nav__link">
         
   
   
@@ -950,7 +956,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../061_actividad/" class="md-nav__link">
+      <a href="../../ud02_framework/061_actividad/" class="md-nav__link">
         
   
   
@@ -973,7 +979,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../062_actividad/" class="md-nav__link">
+      <a href="../../ud02_framework/062_actividad/" class="md-nav__link">
         
   
   
@@ -1340,24 +1346,29 @@
       
   
   
+    
   
   
+  
     
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
         
           
-          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
             
   
   
@@ -1370,7 +1381,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             UD5 Estados
@@ -1384,7 +1395,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ud05_state/051_intro/" class="md-nav__link">
+      <a href="../051_intro/" class="md-nav__link">
         
   
   
@@ -1404,10 +1415,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../ud05_state/052_routing/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    5.2 Navegación y Routing en Angular
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1418,6 +1451,68 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#configurando-el-routing-en-angular" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configurando el routing en Angular
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#navegación-entre-vistas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Navegación entre vistas
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Navegación entre vistas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      &lt;router-outlet&gt;
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#routerlink" class="md-nav__link">
+    <span class="md-ellipsis">
+      routerLink
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1430,7 +1525,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ud05_state/053_signals/" class="md-nav__link">
+      <a href="../053_signals/" class="md-nav__link">
         
   
   
@@ -1545,6 +1640,56 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#configurando-el-routing-en-angular" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configurando el routing en Angular
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#navegación-entre-vistas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Navegación entre vistas
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Navegación entre vistas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      &lt;router-outlet&gt;
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#routerlink" class="md-nav__link">
+    <span class="md-ellipsis">
+      routerLink
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1559,39 +1704,133 @@
 
 
 
-<h1 id="211--actividad-proyecto-base-angular--electron">2.1.1 ✍️ Actividad: Proyecto base Angular + Electron</h1>
-<p>Para realizar la actividad se debe seguir los siguientes pasos:</p>
-<ol>
-<li>
-<p>Acepta la <em>invitación a la actividad</em> en GitHub Classroom: <a href="https://classroom.github.com/a/iPZCjSpm">https://classroom.github.com/a/iPZCjSpm</a></p>
+<h1 id="52-navegación-y-routing-en-angular">5.2 Navegación y Routing en Angular</h1>
+<p>La navegación o <em>routing</em> es una parte fundamental de cualquier aplicación. Permite a los usuarios moverse entre diferentes vistas o páginas sin necesidad de recargar la página completa.</p>
+<p>Entendemos como vista a un componente o conjunto de componentes que representan una pantalla o sección específica de la aplicación. Por ejemplo, en una aplicación de comercio electrónico, podríamos tener vistas para la página de inicio, la lista de productos, el carrito de compras y la página de pago.</p>
 <ul>
-<li>Selecciona tu usuario del listado.</li>
-<li>Acepta la actividad.</li>
+<li><em>Documentación oficial: <a href="https://angular.dev/guide/routing">Angular Roting</a></em></li>
 </ul>
-</li>
-<li>
-<p>Clona el repositorio en tu máquina local</p>
-<p>Puedes utilizar <em>VS Code</em> para clonar el repositorio o la terminal con el comando:</p>
-<div class="language-bash highlight"><span class="filename">Clonar el repositorio</span><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>git<span class="w"> </span>clone<span class="w"> </span>&lt;url-repositorio&gt;
+<h2 id="configurando-el-routing-en-angular">Configurando el routing en Angular</h2>
+<p>En un proyecto generado con <em>Angular CLI</em>, las rutas se definen en el archivo <strong><code>src/app/app.routes.ts</code></strong>.</p>
+<div class="language-typescript highlight"><span class="filename">src/app/app.routes.ts</span><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">Routes</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;@angular/router&#39;</span><span class="p">;</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="k">export</span><span class="w"> </span><span class="kd">const</span><span class="w"> </span><span class="nx">routes</span><span class="o">:</span><span class="w"> </span><span class="kt">Routes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="c1">// Aquí definiremos nuestras rutas</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="p">];</span>
 </span></code></pre></div>
-</li>
-<li>
-<p>Sigue los pasos del punto <a href="../04_angular_electron/">1.4 Trabajar con Angular y Electron</a></p>
-</li>
-<li>
-<p>Prueba la aplicación tanto en desarrollo como generando el paquete ejecutable.</p>
-<div class="admonition warning title">
-<p class="admonition-title">Entrega en Aules</p>
-<p>Además de la entrega del código en el repositorio, deberás entregar el empaquetado de la aplicación en formato <code>.zip</code> en la plataforma Aules.</p>
+<div class="admonition info">
+<p class="admonition-title">Qué hacer si no existe el archivo <code>app.routes.ts</code></p>
+<p>Si el archivo <code>app.routes.ts</code> no existe, podemos crearlo manualmente en la carpeta <code>src/app/</code>.</p>
+<p>Y definir el <em>provider</em> en <code>src/app/app.config.ts</code></p>
+<div class="language-typescript highlight"><span class="filename">src/app/app.config.ts</span><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">ApplicationConfig</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;@angular/core&#39;</span><span class="p">;</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">provideRouter</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;@angular/router&#39;</span><span class="p">;</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="hll"><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">routes</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;./app.routes&#39;</span><span class="p">;</span>
+</span></span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="k">export</span><span class="w"> </span><span class="kd">const</span><span class="w"> </span><span class="nx">appConfig</span><span class="o">:</span><span class="w"> </span><span class="kt">ApplicationConfig</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">    </span><span class="nx">providers</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="hll"><span class="w">        </span><span class="nx">provideRouter</span><span class="p">(</span><span class="nx">routes</span><span class="p">),</span>
+</span></span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">        </span><span class="c1">// ...</span>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">    </span><span class="p">]</span>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="p">};</span>
+</span></code></pre></div>
 </div>
-</li>
-<li>
-<p>Realiza un <em>commit</em> con los cambios realizados y sube el código al repositorio remoto.</p>
-</li>
-<li>
-<p>Comprueba que los cambios se han subido correctamente al repositorio remoto.</p>
-</li>
-</ol>
+<p>En el <strong>array <code>routes</code></strong>, se definen las rutas de la aplicación.</p>
+<p>Cada ruta es un <strong>objeto</strong> que contiene al menos dos propiedades: <code>path</code> y <code>component</code>.</p>
+<ul>
+<li><code>path</code>: Es un <em>string</em> que representa la URL de la ruta.</li>
+<li><code>component</code>: Es el componente que se renderizará esa ruta.</li>
+</ul>
+<p>Por ejemplo, para definir una ruta para la página de inicio que renderice el componente <code>HomeView</code>, y una ruta para la página de productos que renderice el componente <code>ProductsView</code>, haríamos lo siguiente:</p>
+<div class="language-typescript highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">src/app/app.routes.ts</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-2-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-2-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-2-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-2-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-2-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-2-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-2-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-2-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-2-10">10</a></span>
+<span class="normal"><a href="#__codelineno-2-11">11</a></span>
+<span class="normal"><a href="#__codelineno-2-12">12</a></span>
+<span class="normal"><a href="#__codelineno-2-13">13</a></span>
+<span class="normal"><a href="#__codelineno-2-14">14</a></span>
+<span class="normal"><a href="#__codelineno-2-15">15</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">Routes</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;@angular/router&#39;</span><span class="p">;</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2"></a>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="hll"><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">HomeView</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;./views/home/home-view&#39;</span><span class="p">;</span>
+</span></span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4"></a><span class="hll"><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">ProductsView</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;./views/products/products-view&#39;</span><span class="p">;</span>
+</span></span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5"></a>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6"></a><span class="k">export</span><span class="w"> </span><span class="kd">const</span><span class="w"> </span><span class="nx">routes</span><span class="o">:</span><span class="w"> </span><span class="kt">Routes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7"></a><span class="w">    </span><span class="p">{</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8"></a><span class="hll"><span class="w">        </span><span class="nx">path</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;&#39;</span><span class="p">,</span>
+</span></span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9"></a><span class="hll"><span class="w">        </span><span class="nx">component</span><span class="o">:</span><span class="w"> </span><span class="kt">HomeView</span>
+</span></span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10"></a><span class="w">    </span><span class="p">},</span>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11"></a><span class="w">    </span><span class="p">{</span>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12"></a><span class="hll"><span class="w">        </span><span class="nx">path</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;products&#39;</span><span class="p">,</span>
+</span></span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13"></a><span class="hll"><span class="w">        </span><span class="nx">component</span><span class="o">:</span><span class="w"> </span><span class="kt">ProductsView</span>
+</span></span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15"></a><span class="p">]</span>
+</span></code></pre></div></td></tr></table></div>
+<p>En este ejemplo, cuando se abra a la URL raíz del proyecto (<code>/</code>), se renderizará el <code>HomeComponent</code>.</p>
+<h2 id="navegación-entre-vistas">Navegación entre vistas</h2>
+<p>Para navegar entre diferentes vistas en Angular, utilizamos el componente <code>&lt;router-outlet&gt;</code> y la directiva <code>routerLink</code>.</p>
+<h3 id="_1"><code>&lt;router-outlet&gt;</code></h3>
+<p>El componente <code>&lt;router-outlet&gt;</code> actúa como un marcador de posición en la plantilla donde se renderizarán los componentes correspondientes a las rutas definidas.</p>
+<p>Por lo general, se coloca en el archivo <code>src/app/app.html</code>:</p>
+<div class="language-html highlight"><span class="filename">src/app/app.html</span><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Mi Aplicación Angular<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="p">&lt;</span><span class="nt">nav</span><span class="p">&gt;</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>    <span class="cm">&lt;!-- Aquí irán los enlaces de navegación --&gt;</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="hll">    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">routerLink</span><span class="o">=</span><span class="s">&quot;/&quot;</span><span class="p">&gt;</span>Inicio<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+</span></span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">routerLink</span><span class="o">=</span><span class="s">&quot;/products&quot;</span><span class="p">&gt;</span>Productos<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="p">&lt;/</span><span class="nt">nav</span><span class="p">&gt;</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="cm">&lt;!-- Marcador de posición para las vistas --&gt;</span>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="p">&lt;</span><span class="nt">router-outlet</span><span class="p">&gt;&lt;/</span><span class="nt">router-outlet</span><span class="p">&gt;</span>
+</span></code></pre></div>
+<h3 id="routerlink"><code>routerLink</code></h3>
+<p>La directiva <code>routerLink</code> se utiliza para crear enlaces de navegación entre las diferentes rutas definidas en la aplicación.
+En el ejemplo anterior, hemos creado dos enlaces de navegación dentro de una barra de navegación (<code>&lt;nav&gt;</code>):</p>
+<div class="language-html highlight"><span class="filename">src/app/app.html</span><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="p">&lt;</span><span class="nt">nav</span><span class="p">&gt;</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>    <span class="cm">&lt;!-- Aquí irán los enlaces de navegación --&gt;</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">routerLink</span><span class="o">=</span><span class="s">&quot;/&quot;</span><span class="p">&gt;</span>Inicio<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">routerLink</span><span class="o">=</span><span class="s">&quot;/products&quot;</span><span class="p">&gt;</span>Productos<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="p">&lt;/</span><span class="nt">nav</span><span class="p">&gt;</span>
+</span></code></pre></div>
+<p>Cuando el usuario haga clic en uno de estos enlaces, Angular actualizará la URL y renderizará el componente correspondiente en el <code>&lt;router-outlet&gt;</code>.</p>
+<p>Para poder utilizar <code>routerLink</code>, debemos asegurarnos que <code>RouterModule</code> esté importado en el componente.</p>
+<div class="language-typescript highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">src/app/app.ts</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-5-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-5-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-5-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-5-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-5-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-5-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-5-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-5-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-5-10">10</a></span>
+<span class="normal"><a href="#__codelineno-5-11">11</a></span>
+<span class="normal"><a href="#__codelineno-5-12">12</a></span>
+<span class="normal"><a href="#__codelineno-5-13">13</a></span>
+<span class="normal"><a href="#__codelineno-5-14">14</a></span>
+<span class="normal"><a href="#__codelineno-5-15">15</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">Component</span><span class="p">,</span><span class="w"> </span><span class="nx">signal</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;@angular/core&#39;</span><span class="p">;</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">RouterLink</span><span class="p">,</span><span class="w"> </span><span class="nx">RouterOutlet</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;@angular/router&#39;</span><span class="p">;</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3"></a>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4"></a><span class="kd">@Component</span><span class="p">({</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5"></a><span class="w">    </span><span class="nx">selector</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;app-root&#39;</span><span class="p">,</span>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6"></a><span class="w">    </span><span class="nx">imports</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7"></a><span class="w">        </span><span class="nx">RouterOutlet</span><span class="p">,</span>
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8"></a><span class="hll"><span class="w">        </span><span class="nx">RouterLink</span>
+</span></span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9"></a><span class="w">    </span><span class="p">],</span>
+</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10"></a><span class="w">    </span><span class="nx">templateUrl</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;./app.html&#39;</span><span class="p">,</span>
+</span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11"></a><span class="w">    </span><span class="nx">styleUrl</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;./app.css&#39;</span>
+</span><span id="__span-5-12"><a id="__codelineno-5-12" name="__codelineno-5-12"></a><span class="p">})</span>
+</span><span id="__span-5-13"><a id="__codelineno-5-13" name="__codelineno-5-13"></a><span class="k">export</span><span class="w"> </span><span class="kd">class</span><span class="w"> </span><span class="nx">App</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-5-14"><a id="__codelineno-5-14" name="__codelineno-5-14"></a>
+</span><span id="__span-5-15"><a id="__codelineno-5-15" name="__codelineno-5-15"></a><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div>
+<p>Esta sería la configuración más básica para implementar navegación y routing en una aplicación Angular. A medida que la aplicación crece, podemos agregar rutas más complejas, como rutas anidadas, rutas con parámetros y protección de rutas mediante <em>guards</em>.</p>
 
 
 

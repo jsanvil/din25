@@ -8,9 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://jsanvil.github.io/din25/ud02_framework/041_actividad/">
+        <link rel="canonical" href="https://jsanvil.github.io/din25/ud05_state/051_intro/">
       
       
+        <link rel="prev" href="../../ud04_usability/041_actividad/">
+      
+      
+        <link rel="next" href="../052_routing/">
       
       
       <link rel="icon" href="../../assets/favicon.png">
@@ -18,7 +22,7 @@
     
     
       
-        <title>2.1.1 ✍️ Actividad: Proyecto base Angular + Electron - DIN 2025</title>
+        <title>5.1 Gestión del estado de la aplicación - DIN 2025</title>
       
     
     
@@ -72,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#211--actividad-proyecto-base-angular--electron" class="md-skip">
+        <a href="#51-gestión-del-estado-de-la-aplicación" class="md-skip">
           Skip to content
         </a>
       
@@ -106,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              2.1.1 ✍️ Actividad: Proyecto base Angular + Electron
+              5.1 Gestión del estado de la aplicación
             
           </span>
         </div>
@@ -267,7 +271,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../" class="md-tabs__link">
+        <a href="../../ud02_framework/" class="md-tabs__link">
           
   
   
@@ -323,11 +327,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../ud05_state/051_intro/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
           
   
   
@@ -794,7 +800,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../" class="md-nav__link">
+      <a href="../../ud02_framework/" class="md-nav__link">
         
   
   
@@ -817,7 +823,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../04_angular_electron/" class="md-nav__link">
+      <a href="../../ud02_framework/04_angular_electron/" class="md-nav__link">
         
   
   
@@ -840,7 +846,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../05_angular_intro/" class="md-nav__link">
+      <a href="../../ud02_framework/05_angular_intro/" class="md-nav__link">
         
   
   
@@ -863,7 +869,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../06_angular_databinding/" class="md-nav__link">
+      <a href="../../ud02_framework/06_angular_databinding/" class="md-nav__link">
         
   
   
@@ -927,7 +933,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../051_actividad/" class="md-nav__link">
+      <a href="../../ud02_framework/051_actividad/" class="md-nav__link">
         
   
   
@@ -950,7 +956,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../061_actividad/" class="md-nav__link">
+      <a href="../../ud02_framework/061_actividad/" class="md-nav__link">
         
   
   
@@ -973,7 +979,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../062_actividad/" class="md-nav__link">
+      <a href="../../ud02_framework/062_actividad/" class="md-nav__link">
         
   
   
@@ -1340,24 +1346,29 @@
       
   
   
+    
   
   
+  
     
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
         
           
-          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
             
   
   
@@ -1370,7 +1381,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             UD5 Estados
@@ -1381,10 +1392,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../ud05_state/051_intro/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    5.1 Gestión del estado de la aplicación
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1395,6 +1428,71 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#qué-es-el-estado-de-una-aplicación" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Qué es el estado de una aplicación?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tipos-de-estado" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tipos de estado
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#por-qué-es-importante-gestionar-el-estado" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Por qué es importante gestionar el estado?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#qué-aprenderemos-en-esta-unidad" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Qué aprenderemos en esta unidad?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#angular-21" class="md-nav__link">
+    <span class="md-ellipsis">
+      Angular 21
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1407,7 +1505,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ud05_state/052_routing/" class="md-nav__link">
+      <a href="../052_routing/" class="md-nav__link">
         
   
   
@@ -1430,7 +1528,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ud05_state/053_signals/" class="md-nav__link">
+      <a href="../053_signals/" class="md-nav__link">
         
   
   
@@ -1545,6 +1643,59 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#qué-es-el-estado-de-una-aplicación" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Qué es el estado de una aplicación?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tipos-de-estado" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tipos de estado
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#por-qué-es-importante-gestionar-el-estado" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Por qué es importante gestionar el estado?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#qué-aprenderemos-en-esta-unidad" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Qué aprenderemos en esta unidad?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#angular-21" class="md-nav__link">
+    <span class="md-ellipsis">
+      Angular 21
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1559,39 +1710,63 @@
 
 
 
-<h1 id="211--actividad-proyecto-base-angular--electron">2.1.1 ✍️ Actividad: Proyecto base Angular + Electron</h1>
-<p>Para realizar la actividad se debe seguir los siguientes pasos:</p>
-<ol>
-<li>
-<p>Acepta la <em>invitación a la actividad</em> en GitHub Classroom: <a href="https://classroom.github.com/a/iPZCjSpm">https://classroom.github.com/a/iPZCjSpm</a></p>
+<h1 id="51-gestión-del-estado-de-la-aplicación">5.1 Gestión del estado de la aplicación</h1>
+<p>En las secciones anteriores, hemos visto cómo consumir datos desde un servicio REST y mostrarlos en nuestra aplicación Angular. Sin embargo, a medida que nuestra aplicación crece en complejidad, gestionar el estado de la aplicación (los datos que se muestran y cómo cambian) puede volverse un desafío.</p>
+<p>En esta unidad, exploraremos cómo manejar el estado de la aplicación de manera efectiva utilizando técnicas y herramientas adecuadas. Aprenderemos a mantener la consistencia de los datos, gestionar las actualizaciones y optimizar el rendimiento de nuestra aplicación.</p>
+<h2 id="qué-es-el-estado-de-una-aplicación">¿Qué es el estado de una aplicación?</h2>
+<p>El estado de una aplicación se refiere a la representación actual de los <mark class="critic"><strong>datos</strong></mark> y la interfaz de usuario en un momento dado. Incluye toda la información que la aplicación necesita para funcionar correctamente, como:</p>
 <ul>
-<li>Selecciona tu usuario del listado.</li>
-<li>Acepta la actividad.</li>
+<li>Datos del usuario</li>
+<li>Datos obtenidos de servicios externos</li>
+<li>Estado de los componentes de la interfaz de usuario (por ejemplo, si un modal está abierto o cerrado)</li>
+<li>Preferencias del usuario (por ejemplo, tema oscuro o claro, idioma seleccionado, etc.)</li>
 </ul>
-</li>
-<li>
-<p>Clona el repositorio en tu máquina local</p>
-<p>Puedes utilizar <em>VS Code</em> para clonar el repositorio o la terminal con el comando:</p>
-<div class="language-bash highlight"><span class="filename">Clonar el repositorio</span><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>git<span class="w"> </span>clone<span class="w"> </span>&lt;url-repositorio&gt;
-</span></code></pre></div>
-</li>
-<li>
-<p>Sigue los pasos del punto <a href="../04_angular_electron/">1.4 Trabajar con Angular y Electron</a></p>
-</li>
-<li>
-<p>Prueba la aplicación tanto en desarrollo como generando el paquete ejecutable.</p>
-<div class="admonition warning title">
-<p class="admonition-title">Entrega en Aules</p>
-<p>Además de la entrega del código en el repositorio, deberás entregar el empaquetado de la aplicación en formato <code>.zip</code> en la plataforma Aules.</p>
-</div>
-</li>
-<li>
-<p>Realiza un <em>commit</em> con los cambios realizados y sube el código al repositorio remoto.</p>
-</li>
-<li>
-<p>Comprueba que los cambios se han subido correctamente al repositorio remoto.</p>
-</li>
+<h2 id="tipos-de-estado">Tipos de estado</h2>
+<p>Podemos clasificar el estado de una aplicación en dos tipos principales:</p>
+<ol>
+<li><strong>Estado local</strong>: Es el estado que se maneja dentro de un componente específico. Por ejemplo, el estado de un formulario o el estado de un modal. Este tipo de estado es fácil de gestionar, pero puede volverse complicado cuando necesitamos compartir datos entre múltiples componentes.</li>
+<li><strong>Estado global</strong>: Es el estado que se comparte entre diferentes partes de la aplicación. Este tipo de estado es útil cuando varios componentes necesitan acceder a los mismos datos, como la información del usuario autenticado o los datos obtenidos de una API.</li>
 </ol>
+<h2 id="por-qué-es-importante-gestionar-el-estado">¿Por qué es importante gestionar el estado?</h2>
+<p>Hasta ahora, hemos manejado el estado de manera local dentro de los componentes. Sin embargo, a medida que la aplicación crece, es posible que necesitemos una estrategia más robusta para gestionar el estado de manera global. Esto nos permitirá compartir datos entre diferentes partes de la aplicación y mantener la coherencia en toda la interfaz de usuario.</p>
+<p>Una gestión adecuada del estado nos ayuda a:</p>
+<ul>
+<li>Mantener la consistencia de los datos en toda la aplicación.</li>
+<li>Facilitar la comunicación entre componentes.</li>
+<li>Mejorar el rendimiento al evitar renderizados innecesarios.</li>
+<li>Simplificar la depuración y el mantenimiento del código.</li>
+<li>Implementar funcionalidades avanzadas como el historial de cambios y la sincronización en tiempo real.</li>
+<li>Preparar la aplicación para futuras expansiones y nuevas características.</li>
+<li>Mejorar la experiencia del usuario al proporcionar una interfaz más reactiva y fluida.</li>
+</ul>
+<h2 id="qué-aprenderemos-en-esta-unidad">¿Qué aprenderemos en esta unidad?</h2>
+<ul>
+<li><strong>Routing</strong>: Cómo gestionar rutas para mejorar la navegación en nuestra aplicación.</li>
+<li><strong>Signals</strong>: Introducción a las señales en Angular para gestionar el estado de manera reactiva.</li>
+<li><strong>State Management</strong>: Técnicas y herramientas para gestionar el estado global de la aplicación de manera eficiente.</li>
+</ul>
+<p>Esto lo conseguiremos a través de ejemplos prácticos y el desarrollo de un pequeño proyecto guiado basado en un juego incremental que nos permitirá aplicar los conceptos aprendidos.</p>
+<h2 id="angular-21">Angular 21</h2>
+<p>Con la llegada de Angular 21, se han introducido nuevas características y mejoras que facilitan la gestión del estado y la navegación en nuestras aplicaciones. A lo largo de esta unidad, aprovecharemos estas novedades para construir una aplicación más robusta y eficiente.</p>
+<p>Para instalar la última versión de Angular, podemos utilizar el siguiente comando:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>@angular/cli
+</span></code></pre></div>
+<p>Asegurémonos de tener la versión correcta ejecutando <code>ng version</code> en la terminal y verificando que la versión de Angular CLI sea 21 o superior:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>ng<span class="w"> </span>version
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">     </span>_<span class="w">                      </span>_<span class="w">                 </span>____<span class="w"> </span>_<span class="w">     </span>___
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">    </span>/<span class="w"> </span><span class="se">\ </span><span class="w">  </span>_<span class="w"> </span>__<span class="w">   </span>__<span class="w"> </span>_<span class="w"> </span>_<span class="w">   </span>_<span class="p">|</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>__<span class="w"> </span>_<span class="w"> </span>_<span class="w"> </span>__<span class="w">     </span>/<span class="w"> </span>___<span class="p">|</span><span class="w"> </span><span class="p">|</span><span class="w">   </span><span class="p">|</span>_<span class="w"> </span>_<span class="p">|</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">   </span>/<span class="w"> </span>△<span class="se">\ </span><span class="p">|</span><span class="w"> </span><span class="s1">&#39;_ \ / _` | | | | |/ _` | &#39;</span>__<span class="p">|</span><span class="w">   </span><span class="p">|</span><span class="w"> </span><span class="p">|</span><span class="w">   </span><span class="p">|</span><span class="w"> </span><span class="p">|</span><span class="w">    </span><span class="p">|</span><span class="w"> </span><span class="p">|</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">  </span>/<span class="w"> </span>___<span class="w"> </span><span class="se">\|</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="o">(</span>_<span class="p">|</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="p">|</span>_<span class="p">|</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="o">(</span>_<span class="p">|</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="p">|</span><span class="w">      </span><span class="p">|</span><span class="w"> </span><span class="p">|</span>___<span class="p">|</span><span class="w"> </span><span class="p">|</span>___<span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="p">|</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w"> </span>/_/<span class="w">   </span><span class="se">\_\_</span><span class="p">|</span><span class="w"> </span><span class="p">|</span>_<span class="p">|</span><span class="se">\_</span>_,<span class="w"> </span><span class="p">|</span><span class="se">\_</span>_,_<span class="p">|</span>_<span class="p">|</span><span class="se">\_</span>_,_<span class="p">|</span>_<span class="p">|</span><span class="w">       </span><span class="se">\_</span>___<span class="p">|</span>_____<span class="p">|</span>___<span class="p">|</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">                </span><span class="p">|</span>___/
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="hll">Angular<span class="w"> </span>CLI<span class="w">       </span>:<span class="w"> </span><span class="m">21</span>.0.2
+</span></span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>Node.js<span class="w">           </span>:<span class="w"> </span><span class="m">22</span>.21.1
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>Package<span class="w"> </span>Manager<span class="w">   </span>:<span class="w"> </span>npm<span class="w"> </span><span class="m">10</span>.9.4
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>Operating<span class="w"> </span>System<span class="w">  </span>:<span class="w"> </span>linux<span class="w"> </span>x64
+</span></code></pre></div>
 
 
 
