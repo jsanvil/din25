@@ -8,26 +8,28 @@
       
       
       
-        <link rel="canonical" href="https://jsanvil.github.io/din25/">
+        <link rel="canonical" href="https://jsanvil.github.io/din25/ud07_deployment/071_intro/">
       
       
+        <link rel="prev" href="../../ud06_graph/063_threejs/">
       
-        <link rel="next" href="entorno/">
+      
+        <link rel="next" href="../072_packaging/">
       
       
-      <link rel="icon" href="assets/favicon.png">
+      <link rel="icon" href="../../assets/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.17">
     
     
       
-        <title>Desarrollo de Interfaces 2025/26 - DIN 2025</title>
+        <title>7.1 Despliegue y pruebas - DIN 2025</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.7e37652d.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -46,9 +48,9 @@
       
     
     
-      <link rel="stylesheet" href="stylesheets/extra.css">
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -74,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#desarrollo-de-interfaces-202526" class="md-skip">
+        <a href="#71-despliegue-y-pruebas" class="md-skip">
           Skip to content
         </a>
       
@@ -88,7 +90,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="DIN 2025" class="md-header__button md-logo" aria-label="DIN 2025" data-md-component="logo">
+    <a href="../.." title="DIN 2025" class="md-header__button md-logo" aria-label="DIN 2025" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 14c1.33 0 4 .67 4 2v1h-8v-1c0-1.33 2.67-2 4-2m0-1c1.11 0 2-.89 2-2s-.89-2-2-2a2 2 0 1 0 0 4m7-5v10c0 1.11-.89 2-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h6l2 2h8a2 2 0 0 1 2 2m-2 0H4v10h16z"/></svg>
@@ -108,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Desarrollo de Interfaces 2025/26
+              7.1 Despliegue y pruebas
             
           </span>
         </div>
@@ -205,13 +207,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="." class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../.." class="md-tabs__link">
           
   
   
@@ -231,7 +231,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="projects/ev1_habit_tracker/" class="md-tabs__link">
+        <a href="../../projects/ev1_habit_tracker/" class="md-tabs__link">
           
   
   
@@ -251,7 +251,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="ud01_intro/" class="md-tabs__link">
+        <a href="../../ud01_intro/" class="md-tabs__link">
           
   
   
@@ -271,7 +271,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="ud02_framework/" class="md-tabs__link">
+        <a href="../../ud02_framework/" class="md-tabs__link">
           
   
   
@@ -291,7 +291,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="ud03_components/" class="md-tabs__link">
+        <a href="../../ud03_components/" class="md-tabs__link">
           
   
   
@@ -311,7 +311,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="ud04_usability/" class="md-tabs__link">
+        <a href="../../ud04_usability/" class="md-tabs__link">
           
   
   
@@ -331,7 +331,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="ud05_state/051_intro/" class="md-tabs__link">
+        <a href="../../ud05_state/051_intro/" class="md-tabs__link">
           
   
   
@@ -351,7 +351,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="ud06_graph/061_intro/" class="md-tabs__link">
+        <a href="../../ud06_graph/061_intro/" class="md-tabs__link">
           
   
   
@@ -367,11 +367,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="ud07_deployment/071_intro/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
           
   
   
@@ -405,7 +407,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="DIN 2025" class="md-nav__button md-logo" aria-label="DIN 2025" data-md-component="logo">
+    <a href="../.." title="DIN 2025" class="md-nav__button md-logo" aria-label="DIN 2025" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 14c1.33 0 4 .67 4 2v1h-8v-1c0-1.33 2.67-2 4-2m0-1c1.11 0 2-.89 2-2s-.89-2-2-2a2 2 0 1 0 0 4m7-5v10c0 1.11-.89 2-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h6l2 2h8a2 2 0 0 1 2 2m-2 0H4v10h16z"/></svg>
@@ -420,29 +422,24 @@
       
   
   
-    
   
   
-  
     
     
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
         
           
-          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
             
   
   
@@ -455,7 +452,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_1">
             <span class="md-nav__icon md-icon"></span>
             Inicio
@@ -466,32 +463,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Desarrollo de Interfaces 2025/26
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -502,35 +477,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#resultados-de-aprendizaje" class="md-nav__link">
-    <span class="md-ellipsis">
-      Resultados de Aprendizaje
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -543,7 +489,7 @@
   
   
     <li class="md-nav__item">
-      <a href="entorno/" class="md-nav__link">
+      <a href="../../entorno/" class="md-nav__link">
         
   
   
@@ -566,7 +512,7 @@
   
   
     <li class="md-nav__item">
-      <a href="RRAA_CCEE/" class="md-nav__link">
+      <a href="../../RRAA_CCEE/" class="md-nav__link">
         
   
   
@@ -637,7 +583,7 @@
   
   
     <li class="md-nav__item">
-      <a href="projects/ev1_habit_tracker/" class="md-nav__link">
+      <a href="../../projects/ev1_habit_tracker/" class="md-nav__link">
         
   
   
@@ -660,7 +606,7 @@
   
   
     <li class="md-nav__item">
-      <a href="projects/incremental_game/" class="md-nav__link">
+      <a href="../../projects/incremental_game/" class="md-nav__link">
         
   
   
@@ -731,7 +677,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ud01_intro/" class="md-nav__link">
+      <a href="../../ud01_intro/" class="md-nav__link">
         
   
   
@@ -754,7 +700,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ud01_intro/01_electron_intro/" class="md-nav__link">
+      <a href="../../ud01_intro/01_electron_intro/" class="md-nav__link">
         
   
   
@@ -777,7 +723,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ud01_intro/02_electron_firstapp/" class="md-nav__link">
+      <a href="../../ud01_intro/02_electron_firstapp/" class="md-nav__link">
         
   
   
@@ -800,7 +746,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ud01_intro/021_actividad/" class="md-nav__link">
+      <a href="../../ud01_intro/021_actividad/" class="md-nav__link">
         
   
   
@@ -823,7 +769,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ud01_intro/03_gui/" class="md-nav__link">
+      <a href="../../ud01_intro/03_gui/" class="md-nav__link">
         
   
   
@@ -894,7 +840,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ud02_framework/" class="md-nav__link">
+      <a href="../../ud02_framework/" class="md-nav__link">
         
   
   
@@ -917,7 +863,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ud02_framework/04_angular_electron/" class="md-nav__link">
+      <a href="../../ud02_framework/04_angular_electron/" class="md-nav__link">
         
   
   
@@ -940,7 +886,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ud02_framework/05_angular_intro/" class="md-nav__link">
+      <a href="../../ud02_framework/05_angular_intro/" class="md-nav__link">
         
   
   
@@ -963,7 +909,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ud02_framework/06_angular_databinding/" class="md-nav__link">
+      <a href="../../ud02_framework/06_angular_databinding/" class="md-nav__link">
         
   
   
@@ -1027,7 +973,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ud02_framework/051_actividad/" class="md-nav__link">
+      <a href="../../ud02_framework/051_actividad/" class="md-nav__link">
         
   
   
@@ -1050,7 +996,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ud02_framework/061_actividad/" class="md-nav__link">
+      <a href="../../ud02_framework/061_actividad/" class="md-nav__link">
         
   
   
@@ -1073,7 +1019,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ud02_framework/062_actividad/" class="md-nav__link">
+      <a href="../../ud02_framework/062_actividad/" class="md-nav__link">
         
   
   
@@ -1152,7 +1098,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ud03_components/" class="md-nav__link">
+      <a href="../../ud03_components/" class="md-nav__link">
         
   
   
@@ -1175,7 +1121,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ud03_components/07_components/" class="md-nav__link">
+      <a href="../../ud03_components/07_components/" class="md-nav__link">
         
   
   
@@ -1239,7 +1185,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ud03_components/071_actividad/" class="md-nav__link">
+      <a href="../../ud03_components/071_actividad/" class="md-nav__link">
         
   
   
@@ -1318,7 +1264,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ud04_usability/" class="md-nav__link">
+      <a href="../../ud04_usability/" class="md-nav__link">
         
   
   
@@ -1341,7 +1287,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ud04_usability/04_rest/" class="md-nav__link">
+      <a href="../../ud04_usability/04_rest/" class="md-nav__link">
         
   
   
@@ -1405,7 +1351,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ud04_usability/041_actividad/" class="md-nav__link">
+      <a href="../../ud04_usability/041_actividad/" class="md-nav__link">
         
   
   
@@ -1484,7 +1430,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ud05_state/051_intro/" class="md-nav__link">
+      <a href="../../ud05_state/051_intro/" class="md-nav__link">
         
   
   
@@ -1507,7 +1453,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ud05_state/052_routing/" class="md-nav__link">
+      <a href="../../ud05_state/052_routing/" class="md-nav__link">
         
   
   
@@ -1530,7 +1476,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ud05_state/053_signals/" class="md-nav__link">
+      <a href="../../ud05_state/053_signals/" class="md-nav__link">
         
   
   
@@ -1553,7 +1499,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ud05_state/054_global_state/" class="md-nav__link">
+      <a href="../../ud05_state/054_global_state/" class="md-nav__link">
         
   
   
@@ -1617,7 +1563,7 @@
   
   
     <li class="md-nav__item">
-      <a href="projects/incremental_game/" class="md-nav__link">
+      <a href="../../projects/incremental_game/" class="md-nav__link">
         
   
   
@@ -1696,7 +1642,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ud06_graph/061_intro/" class="md-nav__link">
+      <a href="../../ud06_graph/061_intro/" class="md-nav__link">
         
   
   
@@ -1719,7 +1665,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ud06_graph/062_chartjs/" class="md-nav__link">
+      <a href="../../ud06_graph/062_chartjs/" class="md-nav__link">
         
   
   
@@ -1742,7 +1688,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ud06_graph/063_threejs/" class="md-nav__link">
+      <a href="../../ud06_graph/063_threejs/" class="md-nav__link">
         
   
   
@@ -1769,24 +1715,29 @@
       
   
   
+    
   
   
+  
     
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" checked>
         
           
-          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="">
             
   
   
@@ -1799,7 +1750,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_9">
             <span class="md-nav__icon md-icon"></span>
             UD7 Despliegue
@@ -1810,10 +1761,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="ud07_deployment/071_intro/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    7.1 Despliegue y pruebas
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1824,6 +1797,89 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#qué-es-cicd" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Qué es CI/CD?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#beneficios-de-cicd" class="md-nav__link">
+    <span class="md-ellipsis">
+      Beneficios de CI/CD
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#implementación-de-cicd-en-proyectos-de-desarrollo-de-interfaces-gráficas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Implementación de CI/CD en proyectos de desarrollo de interfaces gráficas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejemplo-de-caso-de-uso" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejemplo de caso de uso
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#automatización-de-pruebas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Automatización de pruebas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#linter" class="md-nav__link">
+    <span class="md-ellipsis">
+      Linter
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recursos-adicionales" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recursos adicionales
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1836,7 +1892,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ud07_deployment/072_packaging/" class="md-nav__link">
+      <a href="../072_packaging/" class="md-nav__link">
         
   
   
@@ -1886,9 +1942,63 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#resultados-de-aprendizaje" class="md-nav__link">
+  <a href="#qué-es-cicd" class="md-nav__link">
     <span class="md-ellipsis">
-      Resultados de Aprendizaje
+      ¿Qué es CI/CD?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#beneficios-de-cicd" class="md-nav__link">
+    <span class="md-ellipsis">
+      Beneficios de CI/CD
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#implementación-de-cicd-en-proyectos-de-desarrollo-de-interfaces-gráficas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Implementación de CI/CD en proyectos de desarrollo de interfaces gráficas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejemplo-de-caso-de-uso" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejemplo de caso de uso
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#automatización-de-pruebas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Automatización de pruebas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#linter" class="md-nav__link">
+    <span class="md-ellipsis">
+      Linter
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recursos-adicionales" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recursos adicionales
     </span>
   </a>
   
@@ -1910,16 +2020,109 @@
 
 
 
-<h1 id="desarrollo-de-interfaces-202526">Desarrollo de Interfaces 2025/26</h1>
-<h2 id="resultados-de-aprendizaje">Resultados de Aprendizaje</h2>
+<h1 id="71-despliegue-y-pruebas">7.1 Despliegue y pruebas</h1>
+<p>Un aspecto crucial en el desarrollo de software es la capacidad de entregar aplicaciones de manera rápida, confiable y eficiente. Es aquí donde entran en juego las prácticas de Integración Continua y Despliegue Continuo (CI/CD). Estas prácticas no solo mejoran la calidad del software, sino que también aceleran el proceso de entrega, permitiendo a los equipos de desarrollo responder rápidamente a las necesidades del mercado y de los usuarios.</p>
+<p>La Integración Continua y el Despliegue Continuo (CI/CD) son prácticas fundamentales en el desarrollo de software moderno que permiten automatizar y mejorar la calidad del proceso de desarrollo y entrega de aplicaciones. En esta sección, exploraremos los conceptos clave de CI/CD, sus beneficios y cómo implementarlos en proyectos de desarrollo de interfaces gráficas.</p>
+<div class="admonition warning">
+<p class="admonition-title"><em>'En mi ordenador funciona'</em></p>
+<p>"<strong><code>It works on my machine ¯\_(ツ)_/¯</code></strong>"</p>
+<p>Este meme es una frase comúnmente utilizada por desarrolladores para indicar que un programa funciona correctamente en su entorno local, pero puede fallar cuando se ejecuta en otro entorno, como el de producción o el de otro desarrollador. Este problema suele surgir debido a diferencias en las configuraciones del entorno, dependencias, versiones de software, entre otros factores.</p>
+<p>Es un problema típico en proyectos de estudiantes, que se suele solucionar mediante máquinas virtuales o directamente llevando el equipo donde se desarrolló el proyecto a la presentación. Sin embargo, en entornos profesionales, este enfoque no es viable. Aquí es donde las prácticas de CI/CD juegan un papel crucial al garantizar que el software se pruebe y despliegue de manera consistente en diferentes entornos, minimizando la probabilidad de que surjan problemas relacionados con las diferencias en las configuraciones del entorno.</p>
+<p><figure markdown="span">
+    <img alt="It works on my machine" src="../img/itworks_meme.png" width="350" />
+    <figcaption>Meme "It works on my machine"</figcaption>
+</figure></p>
+</div>
+<h2 id="qué-es-cicd">¿Qué es CI/CD?</h2>
+<p>CI/CD es un conjunto de prácticas que combinan la Integración Continua (CI) y el Despliegue Continuo (CD) para automatizar el proceso de desarrollo, prueba y entrega de software.</p>
 <ul>
-<li><strong>RA1</strong>. Genera interfaces gráficos de usuario mediante editores visuales utilizando las funcionalidades del editor y adaptando el código generado.</li>
-<li><strong>RA2</strong>. Genera interfaces naturales de usuario utilizando herramientas visuales.</li>
-<li><strong>RA3</strong>. Crea componentes visuales valorando y empleando herramientas específicas.</li>
-<li><strong>RA4</strong>. Diseña interfaces gráficas identificando y aplicando criterios de usabilidad y accesibilidad.</li>
-<li><strong>RA5</strong>. Crea informes evaluando y utilizando herramientas gráficas.</li>
-<li><strong>RA6</strong>. Documenta aplicaciones seleccionando y utilizando herramientas específicas.</li>
-<li><strong>RA7</strong>. Prepara aplicaciones para su distribución evaluando y utilizando herramientas específicas.</li>
+<li><strong>Integración Continua (CI)</strong>: Es la práctica de integrar regularmente el código de los desarrolladores en un <strong>repositorio compartido</strong>. Cada integración se verifica mediante la <strong>ejecución automática de pruebas</strong> para detectar errores lo antes posible.</li>
+<li><strong>Despliegue Continuo (CD)</strong>: Es la práctica de <strong>automatizar la entrega del software</strong> a entornos de producción o preproducción después de que haya pasado todas las pruebas. Esto permite que las nuevas funcionalidades y correcciones de errores lleguen a los usuarios de manera rápida y confiable.</li>
+</ul>
+<h2 id="beneficios-de-cicd">Beneficios de CI/CD</h2>
+<ul>
+<li><strong>Detección temprana de errores</strong>: Al integrar y probar el código con frecuencia, los errores se detectan y corrigen rápidamente.</li>
+<li><strong>Entrega rápida</strong>: Las nuevas funcionalidades y correcciones de errores se pueden entregar a los usuarios de manera más rápida y frecuente.</li>
+<li><strong>Mejora de la calidad del software</strong>: La automatización de pruebas y despliegues reduce la probabilidad de errores humanos.</li>
+</ul>
+<h2 id="implementación-de-cicd-en-proyectos-de-desarrollo-de-interfaces-gráficas">Implementación de CI/CD en proyectos de desarrollo de interfaces gráficas</h2>
+<ol>
+<li><strong>Configuración del repositorio</strong>: Utiliza un <strong>sistema de control de versiones</strong> como <em>Git</em> para gestionar el código fuente del proyecto.</li>
+<li><strong>Automatización de pruebas</strong>: Implementa <strong>pruebas unitarias y de integración</strong> para verificar la funcionalidad de las interfaces gráficas.</li>
+<li><strong>Configuración de un servidor CI/CD</strong>: Utiliza herramientas como Jenkins, GitHub Actions, GitLab CI o Travis CI <strong>automatizar el proceso de integración y despliegue</strong>.</li>
+<li><strong>Definición de pipelines</strong>: Crea <em>pipelines</em> (flujos de trabajo) que definan los <strong>pasos necesarios para construir, probar y desplegar</strong> la aplicación.</li>
+<li><strong>Monitoreo y retroalimentación</strong>: Implementa sistemas de monitoreo para <strong>evaluar el rendimiento</strong> de la aplicación y obtener <strong>retroalimentación de los usuarios</strong>.</li>
+<li><strong>Documentación</strong>: <strong>Documentar todo el proceso</strong> de CI/CD, incluyendo la configuración del servidor, los pipelines y las pruebas automatizadas.</li>
+</ol>
+<p>Al adoptar prácticas de CI/CD en el desarrollo de interfaces gráficas, los equipos pueden mejorar significativamente la eficiencia, calidad y velocidad de entrega de sus aplicaciones, asegurando una mejor experiencia para los usuarios finales.</p>
+<h2 id="ejemplo-de-caso-de-uso">Ejemplo de caso de uso</h2>
+<p>Imaginemos un equipo de desarrollo que está creando una aplicación <em>Angular</em> multiplataforma, para web, móvil (<em>Android</em>/<em>iOS</em>) y escritorio(<em>Windows</em>/<em>macOS</em>/<em>Linux</em>). Al implementar CI/CD, el equipo puede:</p>
+<ul>
+<li>Configurar un repositorio <em>Git</em> para gestionar el código fuente, con ramas separadas para desarrollo (<em>dev</em>), pruebas (<em>test</em>) y producción (<em>main</em>).</li>
+<li>Escribir pruebas unitarias para los componentes de la interfaz gráfica utilizando <em>Vitest</em>, pruebas de integración con <em>Postman</em> y pruebas de interfaz de usuario con <em>Playwright</em>.</li>
+<li>Configurar un pipeline en <em>GitHub Actions</em> que se active con cada <em>push</em> al repositorio, ejecutando las pruebas automáticamente.</li>
+<li>Si todas las pruebas pasan, el pipeline despliega automáticamente la aplicación a un entorno de preproducción para pruebas adicionales.</li>
+<li>Finalmente, una vez que la aplicación ha sido validada, el pipeline despliega la aplicación a producción.</li>
+</ul>
+<h2 id="automatización-de-pruebas">Automatización de pruebas</h2>
+<p>Al implementar CI/CD, es crucial definir y automatizar diferentes tipos de pruebas para garantizar la calidad del software. Algunos tipos comunes de pruebas incluyen:</p>
+<ul>
+<li><strong>Pruebas unitarias</strong> (<em>Unit Tests</em>): Verifican el funcionamiento de <strong>componentes individuales</strong>.<ul>
+<li>Porcentaje recomendado: <strong>70-80%</strong></li>
+<li>Herramientas comunes: Vitest, Jasmine, Jest</li>
+<li>Son rápidas de ejecutar y proporcionan retroalimentación inmediata a los desarrolladores.</li>
+</ul>
+</li>
+<li><strong>Pruebas de integración</strong> (<em>Integration Tests</em>): Aseguran la integración con servicios externos o APIs.<ul>
+<li>Porcentaje recomendado: <strong>15-20%</strong></li>
+<li>Herramientas comunes: Postman, Supertest, REST Assured</li>
+<li>Verifican que los diferentes módulos o servicios funcionen juntos como se espera.</li>
+<li>Son más lentas que las pruebas unitarias, pero son esenciales para garantizar la cohesión del sistema.</li>
+</ul>
+</li>
+<li><strong>Pruebas de interfaz de usuario (UI)</strong> (<em>UI Tests</em>): Validan la funcionalidad y usabilidad de la interfaz gráfica desde la perspectiva del usuario final.<ul>
+<li>Porcentaje recomendado: <strong>5-10%</strong></li>
+<li>Herramientas comunes: Selenium, Playwright, Cypress</li>
+<li>Simulan las acciones del usuario para asegurar que la interfaz gráfica sea intuitiva y funcione correctamente.</li>
+<li>Estas pruebas suelen ser más lentas y costosas de mantener, por lo que se recomienda utilizarlas con moderación.</li>
+</ul>
+</li>
+<li><strong>Pruebas de volumen y estrés</strong> (<em>Volume and Stress Tests</em>): Evalúan la velocidad y capacidad de respuesta de la aplicación bajo diferentes condiciones de carga.<ul>
+<li>Herramientas comunes: JMeter, Gatling, Locust</li>
+<li>Ayudan a identificar cuellos de botella y asegurar que la aplicación pueda manejar el tráfico esperado.</li>
+</ul>
+</li>
+<li><strong>Pruebas de seguridad</strong> (<em>Security Tests</em>): Identifican vulnerabilidades en la aplicación para protegerla contra ataques.<ul>
+<li>Herramientas comunes: OWASP ZAP, Burp Suite, Snyk</li>
+<li>Son esenciales para garantizar la integridad y confidencialidad de los datos de los usuarios.</li>
+</ul>
+</li>
+<li><strong>Pruebas de regresión</strong> (<em>Regression Tests</em>): Garantizan que las nuevas funcionalidades o correcciones de errores no introduzcan nuevos problemas en el software existente.<ul>
+<li>Herramientas comunes: Selenium, TestComplete, Ranorex</li>
+<li>Se ejecutan después de cada cambio en el código para asegurar que las funcionalidades previas sigan funcionando correctamente.</li>
+</ul>
+</li>
+<li><strong>Pruebas de aceptación</strong> (<em>Acceptance Tests</em>): Validan que la aplicación cumple con los requisitos y expectativas del cliente o usuario final.<ul>
+<li>Herramientas comunes: Cucumber, SpecFlow, FitNesse</li>
+<li>Involucran a los usuarios finales para asegurar que la aplicación satisface sus necesidades y expectativas.</li>
+</ul>
+</li>
+</ul>
+<p>Si trabajamos en proyectos pequeños o personales, puede parecer que la implementación de CI/CD es un esfuerzo excesivo, adoptar estas prácticas desde el principio puede sentar las bases para un desarrollo más estructurado y eficiente a medida que el proyecto crece. Además, muchas herramientas de CI/CD ofrecen planes gratuitos o de bajo costo que pueden ser adecuados para proyectos pequeños.</p>
+<p>Dependiendo del proyecto y del equipo, la proporción de estos tipos de pruebas puede variar. Se deben detectar los puntos críticos de la aplicación y ajustar la estrategia de pruebas en consecuencia para maximizar la cobertura y eficiencia.</p>
+<p>Las pruebas de integración con servicios externos son especialmente importantes, dado que los servicios pueden cambiar o actualizarse sin previo aviso, lo que podría afectar la funcionalidad de la aplicación.</p>
+<h2 id="linter">Linter</h2>
+<p>Además de las pruebas automatizadas, es recomendable utilizar herramientas de análisis estático de código, conocidas como <em>linters</em>, para mantener la calidad y consistencia del código fuente. Los linters ayudan a identificar problemas potenciales, errores de sintaxis y violaciones de las convenciones de codificación antes de que el código se integre en el repositorio principal.</p>
+<p>Angular proporciona soporte integrado para <em>TSLint</em> y <em>ESLint</em>, que son linters populares para proyectos <em>TypeScript</em> y <em>JavaScript</em>. Al configurar un linter en el pipeline de CI/CD, se puede garantizar que todo el código cumpla con los estándares de calidad antes de ser fusionado en la rama principal.</p>
+<p>Para usarlo en Angular, podemos ejecutar el siguiente comando:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="hll">ng<span class="w"> </span>lint
+</span></span></code></pre></div>
+<h2 id="recursos-adicionales">Recursos adicionales</h2>
+<ul>
+<li><a href="https://docs.github.com/en/actions">GitHub Actions</a></li>
+<li><a href="https://docs.gitlab.com/ee/ci/">GitLab CI/CD</a></li>
+<li><a href="https://www.jenkins.io/doc/">Documentación de Jenkins</a></li>
+<li><a href="https://docs.travis-ci.com/">Travis CI Documentation</a></li>
 </ul>
 
 
@@ -1969,10 +2172,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": ".", "features": ["navigation.tabs", "content.code.copy"], "search": "assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "content.code.copy"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.92b07e13.min.js"></script>
+      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
       
     
   </body>
